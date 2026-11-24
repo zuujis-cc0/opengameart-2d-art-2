@@ -1,0 +1,356 @@
+# PSRC Character System + Clothing System
+
+## About:
+This document is an older design musing document thinking about how the human character sprites and ingame implementation would work in Planet Warfare, an all-aspect universe simulation game from the perspective of a 2D platformer (somewhat like terraria x soldat2d). 
+
+Some elements may already by implemented with the Mk2 Human, some are invalid/outdated ideas, while some ideas are still valid and worth pursuit in the future.
+
+It was written when I was beginning to create the Mk2 Human Character after realizing the flaws of my original human character package. This was me brainstorming the maximum scope of ideas, as well as how I'd use it in a future game project.
+
+---
+
+Incl.
+Humans/Skeletons w/clothes
+Animals w/clothes
+Sub 3M beings w/clothes
+Over 3M beings w/clothes
+
+
+SPRITE BASED BEINGS: (below 96px or 3m)
+(Built from a collection of sprites)
+
+=Human Character Standards=
+
+Ages:
+Baby 0-1yo (16px) - single sprite object.
+Infant 1-5yo (32px) - single object w/rayman hands optionally. Cannot decapitate as ragdoll, uses dead/destruction frames for severe damage instead of limb severing.
+Child 5-15yo (48px) - Similar to infant, a single sprite that contains torso and arms and legs, but head is seperate like on an adult, while also having rayman style hands and feet.
+Adult 5-99yo (60px) - full scale 10-piece ragdoll, except hands/feet do not actually collide, only arms/legs do.
+
+Body parts (torso, legs, feet, arms, hands, head) come in multiple variants:
+-Skinny										(SINGLE+Variants)
+-Average - SEE BELOW						(SINGLE+Variants)
+-Fat										(SINGLE+Variants)
+-Pregnant									(SINGLE+Variants)
+-Muscular									(SINGLE+Variants)
+-Sucked Dry/Dead							(MANY)
+-Pustulous/Mutated/Messed Up				(MANY)
+Also
+-Prosthetics/Cyborg/Robot limbs				(MANY)
+-Augmented cyberware limbs					(MANY)
+-Nanotech limbs								(MANY)
+-Alien human limbs 							(MANY)
+-No Skin/Exposed muscles (the red man) 		(SINGLE)
+-Skeleton/Bone 								(SINGLE)
+
+Torso (AVERAGE VARIANTS) types:
+vars - shoulders/bust, waist, hips (narrow - medium - wide)
+Rectangle 				- all proportions equal
+Triangle ^ 				- wide hips, medium waist, narrow shoulders (THICC)
+Inverted Triangle v		- narrow hips, medium waist, wide shoulders
+Hourglass 8	(hard)		- wide hips, narrow waist, wide shoulders
+Figure Eight 8 (soft)	- medium hips, narrow waist, medium shoulders
+Oval O					- medium hips, wide waist, medium shoulders
+Diamond +				- narrow hips, wide waist, narrow shoulders
+
+Effectively this means a 0-2 pixels difference between each torso type, making the upper part, waist, hips more/less broad or narrow.
+Non-form fitting clothes are drawn according to max width as base, while form-fitting clothes are drawn custom to each body shape.
+
+All humans are the same height, but further variation of scale is possible via Universal Entropy style (its a Doom II universal addon mod) using either uniform or irregular X/Y scaling of the human character object.
+
+(Skeleton is seperate char, but its parts *can* be used with a human too)
+(A human can be built from different parts; Fat torso-skinny arms, Average torso-muscular legs etc.)
+(Preferably arms/legs come in matching sets, since clothing needs to be made specifically for each type seperately.)
+(Heads come in a huge variety of options, they're mostly similar size and proportions, but each can look quite unique.)
+
+Torso gets two optional attachable addons:
+-penis, 3 sizes, micro/average/horsecock 1,2,3px thickness, 5,8,12px lenght.
+-boobs, 3 sizes, small/average/melons.
+-ass, 2 sizes, big/bigger.
+-special version of above possible, like tentacle dicks, dick nipples on boobs and other wacky /d/ stuff.
+
+Layering of limbs:
+
+-19 Torso BG clothes OPTION 3 - behind everything.
+
+-18 BG Arm BG Clothes Layer 1
+-17 BG Arm BG Clothes Layer 2
+-16 BG Arm BG Clothes Layer 3
+-15 BG Arm Upper
+-14 BG Arm Lower
+-13 BG Arm Hand
+-12 BG Arm FG Clothes Layer 1
+-11 BG Arm FG Clothes Layer 2
+-10 BG Arm FG Clothes Layer 3
+
+-9 BG Leg BG Clothes Layer 1 - also used for Hip BG mounts.
+-8 BG Leg BG Clothes Layer 2
+-7 BG Leg BG Clothes Layer 3
+-6 BG Leg Upper
+-5 BG Leg Lower
+-4 BG Leg Foot
+-3 BG Leg FG Clothes Layer 1
+-2 BG Leg FG Clothes Layer 2
+-1 BG Leg FG Clothes Layer 3
+
++0 Torso BG Clothes
++1 Torso is core
++2 Torso Clothes OPTION 1 - under legs.
+
++3 Head BG Clothes - also used for Shoulder BG mounts.
++4 Head
++5 Head FG Clothes - also used for Shoulder FG mounts.
+
++6 FG Leg BG Clothes Layer 1
++7 FG Leg BG Clothes Layer 2
++8 FG Leg BG Clothes Layer 3
++10 FG Leg Upper
++11 FG Leg Lower
++12 FG Leg Foot
++13 FG Leg FG Clothes Layer 1
++14 FG Leg FG Clothes Layer 2
++15 FG Leg FG Clothes Layer 3
+
++16 Torso Clothes OPTION 2 - over legs AND head (thick collar) - also used for Hip FG mounts.
+
++17 FG Arm BG Clothes Layer 1
++18 FG Arm BG Clothes Layer 2
++19 FG Arm BG Clothes Layer 3
++20 FG Arm Upper
++21 FG Arm Lower
++22 FG Arm Hand
++23 FG Arm FG Clothes Layer 1
++24 FG Arm FG Clothes Layer 2
++25 FG Arm FG Clothes Layer 3
+
+
+The in-betweens noticable above are reserved for BG and FG clothes.
+The offsets are little bit off to help differentiate at a glance whether something is BG or FG, besides the minus sign too.
+
+
+Animals/Aliens:
+-Basically they use the same as above for Humans, but tailored to their own shape and configuration.
+-Keep the amount of limbs to a minimum wherever possible.
+-Variants/types are optional and low priority (skinny/average/fat etc), but possible.
+-Overall the game is centered around humans and human systems, so something with paws may not be able to operate vehicles or tools.
+-Animals are mostly side-character types, while aliens/animals that are human-like (anthropomorphic) are treated as humans overall.
+-Commonly head of animals is turned towards camera as with humans, but the torso perspective angle depends on the significance of front vs side of torso; 
+--SIDEVIEW = horse, large dog, alligator, giraffe, lion, snake(?), eel(?), hippo, rhino, wyvern, large mammals, fish and reptiles generally, fish, invertebrates (squids/jelly), walrus, seal, bears.
+--FRONTVIEW = birds, monkeys (standing on hindlegs qualifies for front view, basically) small mammals (for cuteness), cats, dragons, amphibians, insects, bats, seastars, urchins, clams/shells, crabs.
+-Smaller animals usually are based on simple IMAJ (idle, move, action, jump) 4 frames system, instead of a ragdoll.
+-Pokemon, (space) monsters, drones, robots, eldrich bullshit, deep ocean nightmares can be either FRONT/SIDE, based on the same above rules.
+
+Other entities:
+SIDE - vehicles, starships, buildings, logistics objects (cargo), stations, machinery, defences, turrets, satellites (large), weapons, devices.
+FRONT - mecha, satellites/devices(tiny), factory assembler arms/tentacles (bio or mech), reactors (emphasis on core visible or suggested from direct front), monitors, appliances, small machines.
+Ext.Humanoid/bipedal mechs (includes both sub and over 3M units, even the gigantic ones). Exceptions for mechs that look more like a tank on legs/mech on treads or otherwise would work better from a sideview.
+Plants/flora = smaller ones can freely choose to be side or front view, often choosing which angle makes it look most endearing/cool. Larger flora tend to be strongly sideview only, unless they somehow have a similar special case.
+Signage, symbols, emblems, emotes and writing is always front.
+Interactable interfaces (computers, control panels, monitors, touchscreens, sockets, buttons/switches, levers) are commonly front facing if BG type (passthrough collisions), while FG types (blocked passage collision) may be sideview.
+Doorways and access passages/hatches/panels between vehicles/buildings/stations vs outer world - can be both. Main Structs and Sub Structs can be accessed from the front, so front view doors are necessary.
+Lights - same as doors; both side and front possible.
+
+*SIDE-FRONT explained: SIDE is 100% orthographic sideview. FRONT is a pseudo ortho-perspective view, where the object is turned towards the camera by about 45-60' angle. You can still see one side of a sprite - more condenced - but the emphasis is on the front. FRONT is usually drawn by drawing the subject as it if was directly staring at the camera, towards the IRL player through the monitor, but then tweaked to bias towards one side (usually left-to-right -->>), and the side is extruded from the front piece, resulting in 30-50% of the side being visible compared to actual SIDE drawn sprites. FRONT's extrusion drawing method is meant to be very easy for beginners to draw these pseudo-3D sprites without actually needing to be talented with perspective drawing.
+
+With FRONT, its important that the facing direction is obvious and clear to the player. They can't be too ambiguous that confuses the player to wonder if they're facing left or right.
+
+
+Clothing System:
+
+-Works on a per-limb basis. Each limb has its own selection of clothing options - first divided by age, and then for adult only; by body type.
+-Baby-to-Child have standardized clothing for the most part (fat/average/skinny Child possible, but not for Infant or Baby).
+-Adult however has far more complex options, but generally there is Torso, Limbs (lower-upper arm or leg as one) and Head. Addons include dick, ass and boobs.
+-Effectively there are sleeves (arms), gloves (hands), leggings (legs), footwear (feet), hats/headgear (head), torsowear (torso) and misc various accessories for legs, feet, arms, hands, torsoes, heads. 
+-Additionally extra wearables like capes, backpacks, frontpacks for any body part can also exist (not just torso, imagine capes for legs!) NOTE: only applies if they're embedded to torso and not an actual external backpack/frontpack, more like a pouch or fanny pack that is part of torso as inventory extension or addition to it. Capes are always BG objects and do not have any collisions what so ever. Cosmetic only!
+-Generally, all cloth sizes and accessories can be worn on any size or type of limb - even horribly mismatched ones.
+-Ideally, people will wear the clothes that fit them best and look the best, but I'm not going to restrict a fat dude wearing a skinny sleeves.
+-The only hard restriction would be is that I cannot wear pieces of clothing on the wrong limbs i.e; hats on feet, gloves on head, torsowear on arms, etc.
+-Cross-species wear is also dubious, like a dog-jacket being donned by a human (on the torso). It might lead to interesting styles, but... it might look a bit out of place.
+EDIT Unless the non-human species has limbs exactly in the same range as humans, then sharing clothes cross-species is not possible due to collision visibility consistency standards. 
+-Animals have a similar system as humans, but require their own line of form fitted clothing.
+
+-The main idea is that there is the Limb upon which any number of clothes can be applied to. Each time when cloth is added or removed to a limb, they are stored in a specific order and whatever resulting image that creates is flashfrozen into a snapshot and baked into a single image that now represents that limb, clothed. Effectively, this is done through code, where it takes a bunch of images and their details (perhaps with certain max limits of how many clothes can be worn on a single limb) and merges them all into a single composite image. It would remember which clothes are there and what their order was, allowing removal of clothes and reconstructing the new merged image based on what is left.
+
+-For any clothpiece, it has a max size it can use for a canvas. A cloth can be smaller than the max size, but never bigger than the max size.
+-The max size for any cloth piece is determined by the pixel width/height dimensions of the limb, plus 4 pixel margin outside it. Basically if a torso piece is 20x20 pixels, then the maximum canvas size for *any* cloth for this limb can be up to 28x28 pixels. While there is no minimum, I think 2px for the image's lowest width or height is a good practice, since a 1px wide sprite is far too thin of an image to put enough detail for it to be worth it.
+
+-There are two types of clothes; FG(Foreground) and BG(Background).
+-FG clothes are presented on top of the Limb they're designed for, while BG clothes are presented behind it.
+-FG clothes size is Limb size + 4px border, while BG clothes are Limb size + 16px border + desaturated and darkened appearance compared to FG clothes.
+
+-Code-wise, a character is able to equip more than one cloth on a limb but as a whole the limb is always treated as one object. There probably needs to be a soft or hard arbitrary limit to how many clothes a single limb can cram on to it - or make it enforced via chaos system - otherwise it would be possible to pile endless amount of clothes on a single character on a single limb. That would lead to absurd situations that not only would be impractical to the character due to added weight and heat insulation, but also bloat the limb's internal memory storage of too many data points to keep track of.
+
+-That said, I do want each limb to effectively have 1-3 clothes layered on them, plus upto 5-8 accessories. Some examples:
+--torso with bra and panties + ammo belt
+--arm with short sleeve + long glove + wristwatch + armband
+--leg with legging(pants) + kneepads + socks + shoes + tool/gun holster
+--head with hat + goggles + facemask + headmounted camera/flashlight + hair
+
+-This would allow for fairly cool and varied characters to exist.
+-More accurately though, code-wise the system would essentially work by having a single limb that has an X amount of slots for clothes/accessories it can equip as datapoints that store the following information:
+--weight, layer, condition, attributes, features, skills, traits.
+-The clothes and the limb would be flattened into a single composite object, with the limb merely having clothes listed on it as data points slotted into them, rather than each cloth being its own individual seperate physical object that is attached to the limb. This saves on having only 1 collider represent the clothed limb fully, while still retaining the flexibility of being able to equip various combinations of clothes in any order, including fun absurd combos of wearing underwear on top of a coat.
+
+-Unequipped, clothes can either appear as-is or in a folded/packaged/rolled up generic state. The latter makes storage, physics throws and piles of clothes have a better functional solution, while the former is good for displays and previews. The idea is that if a cloth is dropped, it first appears as-is but then upon colliding with the floor it collapses into a generic cloth pile object chunk.
+
+
+
+Sub 3M Clothing System:
+-Rectangles, circles and various primitive shapes can be used - colored and textured optionally - as pieces of clothing/armor/accessories.
+-They are placed, rotated and scaled anywhere within the limb that they're assigned to.
+-Any clothing is never actually physical with collisions, it may only be used as a visual overlay that imparts effects and attributes upon the limb that it is attached to, giving it new properties like protection, armor, mobility, abilities or other alterations. 
+-The limb with its rectangular or circle collider sets the boundaries of the max size a clothing can have. (max 4px overlay bleed or max 16px underlay bleed, as usual)
+-Backpacks and bags similar things are not clothing, they're physical objects same as tools, guns, grenades and other interactables/physics objects. They attach externally, allowing for temporary overlap or collision ignoring or merging with the parent they're connected to.
+-In-universe lore wise, since the world is based on these primitive shapes, its normal for people to be inspired by it and wear it upon themselves as a form of fashion.
+
+
+
+Designing clothes:
+-Any single piece of clothing is always assigned to one limb only, specifically for that type of limb, designed for that limb specifically.
+-As such, any pieces of clothes must be self-contained and the otherwise real-life "common/normal" concepts of shirts with sleeves or fullbody dresses or skinsuits are no longer applicable. There can be sets of clothing pieces for each Limb that make up a singular outfit that covers the whole body, but they're always going to be modular and even mixed and matched with completely unrelated outfits, like a space helmet + wedding dress torso + firefighter/police leggings + divingsuit/bombdefusal arms nonsense combo. In game code may and functionality can be made to work with this paradigm and apply certain protections attributes stats to limbs, per limb locally. So if an arm is exposed while the rest of the body is covered, that arm will be only affected by the environment/event - and the effects on the arm may then internally transfer to the torso and the rest of the limbs by proxy.
+
+-Max size for a FG cloth is always Limb size Width/Height px + 4px wide border in all directions. This effectively means limb-specific clothing cannot be used on another limb. If this principle is violated, it will mess up the standardized expectation of what is solid or pass-through in the game. The player won't be able to trust the game, damaging enjoyment severely, thus reducing willingness to participate in playing the game.
+-Max size for a BG cloth is always Limb size + 16px wide border + desaturation and darkening of roughly 20-30 percent, compared to FG or Limb color in order to differentiate what is actually solid FG and what is pass-through BG that has no collision or interaction, for the same reason as above.
+
+-FG clothing is the usual expected stuff; 
+--torsowear like shirts, coats, suits, armor, but without sleeves and can cover anywhere from neck to groin, so they're not exactly the same as real life clothes. Includes extensions like collar, belts, suspenders, neckware, pendands, chokers, pouches and other things that there could possibly be on a torsowear piece of cloth/armor etc.
+--underwear for torso, head, arms, legs, feet or hands. Bra, panties, bikini, mask, socks, undergloves, stockings, corsets, undershirts, ties, harness
+-XX-bodymods like makeup, piercings, tattoos, scars, biomods, augments, nanomods, facepaint - ERROR{Nevermind that, they do need to be seperate! ignore the next>} - These are actually built into the different heads, not seperate unless repeatable between multiple similar heads that all share same patterns where one of these things can be applied to with great compatibility.
+--sleeves and/or gloves, shoulderware, watches, bracelets, armbands etc.
+--leggings, shorts, pants, skirts, socks/kneesocks/thigh-highs, kneepads etc.
+--hats, helmets, bandanas, hoods, glasses, shades, visors, masks, scarf, goggles, devices, bunny ears etc. Also hairstyles use the clothes system. Earrings, hair flowers, tubes. Hairstyles may also include extra elements like cloth straps wraps, strings, ribbons, hairclips and such that are part of the hairstyle instead of a universal addon element that is otherwise compatible with any hairs. Except bald ones.
+
+-BG clothing is for slightly more unusual pieces of clothing that emphasize size and shape or character, extending from the edges of the limb, coming from behind it.
+--capes, spines/spikes, feathers, antennae, hooks, frills, tails, long hair, horns, tentacles, wings, flaps, elaborate decorations.
+
+-For PW in particular, I doubt things like physics enabled hair, scarf, tail, chains, necklasses, long capes, fighter headbands and such are suitable due to being an extra dynamic physics object in a setting where plenty of computing power is needed for other more essential system functions. However elsewhere, there could be an acceptable use for it, especially if its used sparingly for the player character only (like in Intrusion 2 and bosses/specials).
+
+-Long hair has limits. By default, shoulder-lenght hair is max for FG head hair, while about down to where nipples are is the max for BG hair. Both are static, not dynamic.
+
+-For heads, things like hair styles, ear decorations and sideburns can slightly be visible peeking out from behind the unseen side of the head. Since characters automatically will flip the sprite of their head, technically it'll make them identical on both sides, but honestly I'm willing to ignore that consistency for the rule of cool. Otherwise asymmetric hairstyles, hats and ear rings wouldn't be possible. The only caveat to this is to avoid lettering and non-mirrored symbols. Those are a no-no.
+
+-In terms of form fitting to various limb types (thin, average, muscular, fat), there are three types of clothes - loose, tight and XXL.
+-tight is custom fitted for each limb precisely.
+-loose takes the muscular size and draws the cloth based on that, but its usable by also average and thin.
+-XXL is for fat/obese limbs that otherwise would look a bit too wide and too loose for non-fat humans.
+
+-That said, any limb type can wear any cloth size, even a fat limbed person wearing form fitted clothes intended for thin people - with all the uncanny that comes with that. I specifically do not want to restrict any of the possibilities artificially or arbitrarily, since having the freedom to discover goofy things is really funny and liberating as a feeling.
+
+-Dresses are interesting. It may be possible to have torso cloth that specifically can be set to override the usual layer setting and render it on top of a leg (but still under the arm) over the torso. The torso part of the dress can still only be within the torso's limits, so 4px border, meaning this method is only effective for short skirt dresses. Besides that, dresses and especially long dresses are drawn over legs.
+
+-Important point about drawing arm or leg clothes is that the system is technically designed to also operate on a simplified 6 limb system, thats torso/head and each arm/leg as a single limb instead of upper/lower/hand or foot setup. So when drawing leg or arm wear, prepare the canvas for the entire arm/leg, not just the section I want to focus if I were to... say, just draw a glove for the hand only or a sock for the foot/lower leg part. Do actually split the sprites into the 3 segments themselves (upper/lower/hand or foot), so it will be possible to use them for more complex ragdolls, meanwhile glueing them together in an image editor is fairly easy (and teachable!). This way both solutions are supported by the offered assets.
+
+-In general clothes can be either drawn as standalone modules for a singular limb or be drawn as a set. Like a shirt may have a set that includes a torso part and the sleeves. For drawing these sets, its good to prepare the canvas/drawing space with all needed limbs (torso and arm in the mentioned "shirt" case). That said, while sets are drawn together, all their parts will always be usable seperately, no matter what.
+
+-Torso pieces can often be drawn as full-torso or partial-torso pieces. Skinsuits and full body armors are usually full pieces, while shirts/underwear/coats/etc may only cover any part of the torso while leaving any part of the torso not covered, looking at references to copy and adopt an outfit onto the PSRC human model may require rethinking about it entirely. Since FG leg is in-front the torso, it obscures the groin area somewhat (not fully tho) making the idea of pants sort of begging for a lower torso piece to match the leg parts. This *can* be done, but I'd also rather want to see legs/pants be a standalone element, since each limb is responsible for its own clothes and there is no actual clothes that somehow span accross multiple limbs as a whole, code and system wise.
+
+-Long coats/robes that extend over the legs are not possible. Saggy sleeves, legging and torso piece can sort of emulate this.
+-Wide dresses that extend beyond 4px from legs or torso are not possible.
+-Wide bonnets, tall hats, sombreros and afros excess of 4px borders are not possible.
+-Tight covering/wrapping dresses over both legs are not possible due to restriction of movement they create.
+-High heels and other non-flatfoot footwear is not possible. Increases height of character causing inability to traverse 2 tile tunnels. Same goes for platform shoes too.
+-Long and ultralong hair is not possible - unless using custom setup. However I will not provide the chain of sprites to make this happen, those will need to be done by whoever wants to actually do this or do similar things like this, like hair-dreadlocks or scarfs.
+
+-Transparent and Partially-Transparent objects and cloths are possible. For fully transparent objects, define the opacity using Unity's color alpha value. For Partially, reduce opacity of objects within the image editor by doing selections and splitting those sections off into a seperate layer and then tweaking the opacity setting for that layer. The PNG will store that opacity value. Generally draw everything as opaque by default, then create versions with built-in partial transparency if needed - these are somewhat rare anyway and may not necessarily work easily with the merged/flattened composite images that clothing on limbs uses.
+
+-Gradient or Pattern Transparency is also an interesting technique to consider, as another form of partial transparency as mentioned above.
+
+-Draw each cloth piece as isolated and in its most simple form possible. The real complexity will come during combining the different pieces, but the individual components themselves are often mostly basic. The only exception is complex skinsuits that already come with a lot of built-in details.
+
+-Shoes/Boots or Gloves can be layer sorted to display Under or Over the leg/arm, respectively.
+
+-Long shoes/gloves will need to be designed as standalone modules, that while complement each other, do not actually require one another.
+
+-Layering of arms+hands and legs+feet is always the same order; upper, lower and lastly, the foot/hand. However, the clothes for these parts are meant to be layered in any order. gloves that go on top of lower arm, sleeves that go over the gloves/hand, sleeves of lower arm going under upper arm and any other variations of such.
+
+-Worth reminding about the RTF document about the clothing system - especially the ethical part. Do not draw or adopt just about everything without first considering the cultural impact of the piece of clothing that could lead to designs that might look interesting on the surface, but come at the cost of health or mentality, like corsets/high heels/movement-restricting clothes and other obedience/slavery/domination/subjugation originated models for clothes.
+
+-In terms of connectivity of each limb/cloth pieces on a ragdoll, it will be inevitable for some outfits to look a bit blocky and segmented with sharp corners, if drawn as-is. [EXPERIMENTAL - REQUIRES TESTING TO SEE WHICH WAY TO DO THIS CORRECTLY]
++ Option 1: Do not attempt to round the corners at all, keep everything as it appears visually with no concern for sharp edges on the ragdoll.
+(on 6-limb ragdolls, its less jarring, though hands and feet will still show some of this issue)
++ Option 2: Any cloth attempts to have some effort in rounding-smoothing any connection edges and corners where two limbs meet. Might cause loss of some character on cloths and even make the characters look a bit mannequin-like.
+
+-The back side of the character is never visible.
+
+
+Drawing Process of Clothes:
+-First prepare the canvas where a copy of the target limb is brough in as a reference and placed underneath the drawing layer with 50% opacity, sort of as a mannequin.
+-Nearby, have a reference copy of the complete human (naked), just for mental support. Useful when comparing how the cloth looks on a complete body once a while.
+
+-So effectively, there are 4 layers (highest to lowest):
+--Movable human reference mannequin
+--Actual Draw Layer
+--Shadow copy of subject/target limb
+--BG flat color canvas
+
+-When drawing, establish mentally or concretely where the 4px/16px border edges are for a FG/BG type cloth respectively, this is the frame within which I will work in.
+-Look up reference materials, think about how to adapt that to the PSRC cloth system and optionally do some sketches to figure out what I'm going to be actually drawing.
+-Based on this data, start drawing the cloth on the Actual Draw Layer, using the color of the BG flat color canvas as the "eraser" (ease of use thing in Jasc PSP9).
+
+-Drawing Orientations for different limbs:
+--arms, legs, hands, feet - strong sideview with merely 5' degree rotation towards camera. Intent is to see slightly of the front of the legs/arms, to slightly aid that pseudo 3D look, but not so much that its difficult to draw or otherwise cause perspective issues.
+--head - 45' degree rotations towards camera in a sort of orthographic way-ish. Build out the face first, then extent the side of the head. Both eyes are visible, nose, mouth and eyebrows (if applicable) are kind of straight, but only one ear/side of head is visible. Fairly easy to draw and looks ok. Not exact perspective or proportions (head is allowed be slightly cartoonishly large so that actual detail can fit within the tiny pixel space it is able to contain).
+--torso - similar to head, also 45-60' degree view towards camera, otherwise sideviewed. The intent is not to make characters look too thin and undetailed by drawing them strictly sideviewed, but instead look more chunky and wider, while spacing out BG/FG arms a bit apart, for a more dynamic cooler looking pose. Draw the front, shrink and condense it, then draw out the side a bit. Include a neck and connection points for limbs (dark brown dots as "sockets"). Emphasis on being able to show the detail of the front of the character, like how a coat or dress or suit really looks and feels like - something that doesn't come accross properly in strict sideview-only. That said, its only rotated 45'-ish degrees ortho-perspective wise; backpacks can still be clearly visible at the back of the torso.
+
+The above orientation modifiers are unique to humans/controllable humanoids due to their central nature as a relatable avatar.
+Some exception to this can be made, such as specialized mission full-cover helmets instead pointing more strongly sideways, with far less rotated-towards-camera angle degrees. Do note that this does not work with partial-cover helmets. 
+
+I found that action oriented 2D characters benefit from this and can often look cooler - i.e. Samus Aran in Super Metroid, Castlevania, Ninja Gaiden etc. The rule of thumb is that the more closer to regular human the character is the more endearment factor it gets (facing more towards camera, than sideways), while the less human and the more specialized mission/purpose action oriented or machine-like something is, the less it faces from the camera, opting to be more sideways facing, with barely any if at all degrees turned towards camera (like 5' degrees of perspective rotation or less, as opposed to 45-60' degrees that human-most avatars have.)
+
+-Once drawing is completed according to usual standard PSRC protocol, disable the ghosts and mannequins, flatten Draw and BG flat color layers to ensure rogue pixels will be on a single layer only.
+-If the clothes drawn were BG clothes instead of FG clothes, then apply a desaturation/darkening pass on them if such a procedure was not done during drawing otherwise. Probably 20-30% desat/darken is good enough. Test this and standardize it at some point.
+-After this, its now a regular PSRC megasheet, so continue according to usual PSRC sheetmaking protocols.
+
+-SPECIAL: For torso pieces, put Under Leg sprites and Over Leg sprites into their own sheets. Do not mix.
+-SPECIAL: For feet, there is only 2px border at the bottom instead of usual 4px. Top and sides are still 4px as usual.
+
+
+SUB 3M BEINGS:
+
+Built from rectangles and circles, decorated optionally with hand-placed sprites and polygonal deco shapes.
+
+Optionally all shapes may have a repeating texture and color on them. Per shape basis. Can mix and match.
+There are strong density limits for how many limbs, decos and sprites a single being/entity can have; bias is to be as minimal as possible.
+
+Can use clothing, in two forms: sprites or polygonal primitives. Essentially using the same 3M system for Sub 3M entities. These go on top of other decorations mentioned above.
+
+
+
+OVER 3M BEINGS:
+
+Built from rectangles and circles, decorated on their surfaces procedurally with optional sprites and polygonal deco shape sprinkles.
+
+Optionally all shapes may have a repeating texture and color on them. Per shape basis. Can mix and match.
+There are strong density limits for how many limbs, decos and sprites a single being/entity can have; bias is to be as minimal as possible.
+
+Cannot use clothing at all. Too large and complex already, plus Over 3M beings can be cut, shrunk, reduced and broken because they're made out of actual Chunks.
+
+
+
+
+EXTRA WORN EQUIPABLES:
+
+These are larger things like bags, backpacks, inflatable rubber tube donuts, dress frames, large worn devices and other things that significantly large enough that they have their own collision shape and are not part of usual clothes or otherwise use the clothing system at all.
+
+They're attached to a single limb, where the collisions of both the equipable and the limb ignore one another. They're still seperate objects, kind of like an Attachable in Cortex Command. There are specific mechanics on how a equipable thing is picked up, worn and taken off, but that is out of scope for this document.
+
+Normally this functionality is reserved for objects that have a significant upgrade for the character that the clothing system is too limited to provide, such as a large bag that not only provides lots of inventory space, but can also be freely discarded and picked up again easily. Or some device that otherwise is large and heavy enough that you'd want the ability to take it off more readily than clothes. Or a large beautiful but impractical vanity dress frame that otherwise impedes the use of vehicles and blocking off passage through narrow spaces. Or a really large top hat or helmet device that towers over the head.
+
+Carried or mounted weapons, equipment and tools use this system too. They consider an arm as a whole as a single limb for the purposes of wielding/mounting something, not as seperate bits (upper/lower/hand).
+
+A human can mount up to 10 devices on them (3 per arm (6 total), 2 on shoulders via torso, 1 on upper back of torso, 1 on head).
+Legs are primarily used for movement/locomotion, but also as storage/holsters/pockets/resting spots. the lower back of the torso too is meant for storage.
+Technically these could count as mounting locations too, which would add 1 per hip on the leg, 1 for lower back of torso, but I don't know what else could one have on legs that wouldn't impede or remove the ability to move normally for a person or that couldn't be part of the clothes. Meanwhile front of torso is often blocked by arms and putting anything in there either risks becoming hazardous to the person's arms or causing arm movement to be stifled and limited. Most importantly there is no physical control interface for legs and front torso, as each hand can handle 4 inputs at any given time.
+
+Speaking of handling inputs, a human mind can really only focus activating one thing at a time.
+It is possible to have dual functions or dual wielding, alternating the focus between them often and rapidly enough to make it look like there is multitasking involved, thought its only an illusion of one.
+Secondly, a human can enact co-routines in their mind to either activate something at a predictable repeating interval (requiring almost no thought), or activate something subconsiously based on a feedback trigger, as a habit/reaction. The latter is also mostly thoughtless. Still, both of these co-routine types and co-routines in general are not reliable and the human can lapse in executing them if overwhelmed or confused by the slightest thing. They may work for a short time, but not 100% reliably as primary focus operations.
+Thirdly, a human can "alpha strike", as in mash everything and activate all their available systems at once or continuously. Very messy, wasteful and overkill.
+
+Cryptark featured the ability to use 4 weapons/tools + 4 items at any time on-demand, pressing a hotkey. This works tremendously well. A hand can handle operating even more activations than that based on the controller interface usability (what type of mouse, keyboard or controller is in use, how easy it is to use it, etc.)
+
+Equippables, Extra clothing and Devices are seperate physics objects, which leads to increased complexity and performance overhead that needs to be noted and controlled. If I take the worst case example where a fully articulared 10 limb human also gets additional devices loaded on to them, there needs to be a hard limit on how much they can carry and a soft limit on what is encouraged. Anything past the soft limit is subject to more severe chaos system effects and will be prioritized for lag prevention/reduction processing.
+
+3M Sub beings and equipables work the same as sprites; the only difference is that the sprite image is now a textured/colored primitive.
+
+3M Over beings do not have this feature at all. Anything extra is just bolted onto the edges/surfaces of the bodies of 3M as regular connected chunks. Plugged in as a seperate piece, but can also connect to the holistic network of the total being and give effects to it via internal ways.

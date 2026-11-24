@@ -1,0 +1,17 @@
+RotSprite
+https://info.sonicretro.org/RotSprite
+
+Quoted from website:
+
+RotSprite is a sprite rotation and scaling utility developed by Xenowhirl. It outperforms most professional graphics software (such as Photoshop or Paint Shop Pro) when rotating sprites through an angle other than 90° or one of its multiples. Typically, other graphics editors will apply anti-aliasing or use a primitive nearest-neighbor method when rotating images, which produces results that are ugly or unsuitable for sprites.
+
+As Xenowhirl has himself said [1], this utility has been released because "the walking and running frames in Sonic 1, 2, and 3 all need 45 degree rotated equivalents" and "making rotated versions of sprites is usually a pain in the ass, because most programs that rotate a sprite will antialias it (which blurs it and messes with the colors)". RotSprite uses a special algorithm instead which tries to preserve the original sprite's feature by "guessing" pixel patterns.
+
+As an additional feature, RotSprite can also resize sprites (and it does a very good job also for this task).
+
+Several major sceners found this utility very useful. 
+
+
+Reactorcore:
+Useful tiny program if you might want to rotate the sprites *after* you've finished drawing them - for promotional, artistic or marketing purposes.
+As mentioned above, some programs will butcher pixel art with anti-alias or poor placement logic if you attempt to rotate them anywhere between 1' to 89' degrees.

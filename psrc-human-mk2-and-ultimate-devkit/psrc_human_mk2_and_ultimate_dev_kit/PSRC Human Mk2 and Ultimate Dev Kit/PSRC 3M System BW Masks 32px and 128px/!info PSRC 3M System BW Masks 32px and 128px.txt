@@ -1,0 +1,35 @@
+Hello and welcome!
+
+Includes 115 black and white alpha masks* that you can use practically anywhere in games or other graphical applications.
+
+*Alpha Mask, aka Black = invisible, White = visible. 
+Use these images with code to tell what parts of another picture underneath the mask should be visible or invisible.
+
+Squares, circles, triangles, trapezoids, polygons, arrows, splats, bangs, bursts, flowers and gears are included in the pack.
+
+Format:
+PNG, solid black background with a clear white shape in the middle.
+
+Image Sizes: 
+32x32px
+128x128px
+
+Types:
+There are versions with rough edges and soft edges to suit different situations.
+I also included sheets that have spacing for easy previews and reference.
+And also sheets with no spaces so they can used as a 11x11 grid spritesheet directly in games.
+
+Note:
+Read the included "PSRC and 3M System Info.txt" file to learn about the original purpose of this pack. Its optional information to use this pack, but it can inspire you with cool ideas for how versatile these can be and how to use them. I also included basic info images to show the idea behind PSRC 3M System, even if its a bit rudimentary.
+
+--
+
+License:
+
+CC-BY 4.0
+Reactorcore
+http://www.reactorcoregames.com
+
+This work © 2024 by Reactorcore is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+
+(It means you can use them anywhere, even commercially. You only need to mention me (Reactorcore) and my website in the credits.)

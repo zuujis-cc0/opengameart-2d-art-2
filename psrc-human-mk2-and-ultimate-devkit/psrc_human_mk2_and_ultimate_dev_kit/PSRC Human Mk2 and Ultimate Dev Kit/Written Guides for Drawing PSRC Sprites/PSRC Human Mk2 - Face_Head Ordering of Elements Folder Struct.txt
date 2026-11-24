@@ -1,0 +1,72 @@
+PSRC Human Mk2 - Face/Head Ordering of Elements + Folder/File Structure
+
+Layering:
+
+VVV DESCENDING ORDER
+
+[Silhouette]
+=BG Clothes/Headwear
+-BG Hair/Hairstyles
+-BG Horns
+-Animal/Komonomimi/Anime Catgirl ears
+-Head shape
+
+[Facial features]
+-Scars/forehead wrinkles
+-Ear(s)
+-Lips/Mouth (incl. mouth makeup)
+-Fangs
+-Eyes + Lidded Eyes (all except... *)
+-Eyelids (remember eyelids need to have correct skin color, so make them seperate actually. :S)
+-Eye make up (normal or slim versions)
+-Nose 
+-Brows
+-Shocked Wide Open 3px tall Type-3 Eyes (* ...this one, it goes over the brows as an exception. Both narrow and wide eyes versions apply.) {Maybe Actually Remove this?}
+
+[Facial flavors/extras]
+-Blush (located below nose, above mouth and on sides under eyes)
+-Face make up (elsewhere, like forehead, nose or below nose or around mouth)
+-Forehead anime anger or anime sweat emotion emphasis display thingy
+-Sweat
+-Tears
+-Drool
+
+[Coverings/top level elements]
+-FG Horns
+-Clothes/Headwear (Under Hair - Rare, i.e. ear rings/piercings, glasses, eyepatches, headbands... anything tucked in under the hair etc.)
+-Beard/mustache/facial hair (it can cover the mouth, thats fine)
+-Tongue
+-FG Hair/Hairstyles (goes over beards)
+=Clothes/Headwear (Over Hair - Common)
+
+
+
+Categories:
+
+-Type 1,2,3 Eyes (1x1 pixel, 2x1 pixel narrow, 2x2 pixel square) - also doubled: wide and narrow(default) versions.
+-Type 1,2,3 Mouths (1,2,3 pixel wide).
+-(Average Heads, Fat Heads) + (Slim Heads) - also tripled: Smooth, Rough and Wrinky versions.
+-7x brow types (1px narrow, 1px wide, 2px narrow, 2px wide, 3px wide, unibrow wide, unibrow narrow) - multiply with various emotions for each brow type, some have less/more, based on brow size, adaptability and flexibility. 2x and 3x (and maybe unibrow) has most variants, while 1x has least. Its ok if some brows/eyes do not have as many emotions as other eyes. Its part of their character along with their drawbacks/benefits. That said, 1px brows can have the benefit of temporarily being 2px for angry/sad type brows.
+-Average/fat head makeup, Slim head makeup (<o.o>), Wide eye makeup (<o>.<o>).
+-Special noses (if default nose doesn't excite, then there are 6 other noses available. They're divided between Front and Side versions (3+3=6).) Also Front Noses may be best used only on wide-eyes configurations (for 2px Type-2&3 eyes), otherwise the nose can block/hide the eyes underneath them. Side noses atleast allow one eye to still be visible, but it too may be best used in other configs than those where the eyes are narrow (unless they're type-1 1px eyes that still leave a gap even in the narrow config).
+
+
+Misc:
+
+Heads are drawn in their own 12x12px sprites.
+However for elements on top of the head, be it eyes, mouth, tongue, lips, fangs, brows and so on, they use a Tray system, where the sprites are placed on a 7x4px tray, positioned where they should appear on the head and then these Trays are placed over the head with a 4px horizontal offset from the back of the head (assuming a head faces to the right by default, so +4px > that way.) And also a vertical offset downwards from top of 0px, 3px or 8px for Forehead, Eyes/Brows and Mouth/Blush respectively.
+Similar Trays also exist of Ear (3x5px) and Nose (7x3px), placed similarly, thought slightly differing from the other trays.
+
+As usual to PSRC/3M system, hair can overflow 4px from edges of 12x12px of the head's dimensions. For ease of use and compatibility, hair/beard may too use the Tray system of 20x20px sprite images (even if it only utilizes a fraction of that canvas) when placing hair upon the character's head.
+For BG hair, thats 44x44px images (16px overflow) instead.
+
+That said, if any hair sprite is not overflowing and contained within the head's original 12x12px dimentions, it can be a 12x12px sprite for optimization purposes.
+
+
+Headgear/Hat/Cloth Rules:
+
+- Ears and Hair can extend beyond the head shape - but they can be squished, which means certain hats/headgear can temporarily disable/hide ears and hair underneath them.
+-Horns however cannot be squished, so their presense on a head only allows the use of headgear that doesn't mind the presense of horns and can coexist them them. Anything else would be incompatible.
+- After the horn heuristic step, Headgear itself will designate whether or not to hide ears and/or hair. Facial hair or hairstyles that are fully contained within the head's shape/silhouette can bypass this and show up without the headgear disabling them.
+- Again, multiple hairstyles can be placed upon a single head, so with that its possible to keep certain hair while disabling others. Meanwhile, designing hairstyles with combinations in mind can help sorting form-fitting and free-form into compatible packages.
+- Catgirl ears need to adapt to each head type, so the best way is to sort them behind the head shape and extend their base much further down than what the ears normally are. Same issue with horns - they too need to inset into the headshape deeper than the visible surface.

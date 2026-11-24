@@ -1,0 +1,390 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sl276\slmult1\lang11\b\i\f0\fs22 Complete PSRC Spritepacks Creation Workflow\b0\i0\par
+\par
+\ul\b Summary:\par
+\ulnone\b0\par
+Overall step-by-step, program-by-program workflow pipeline for the Pixel Sprites a la Reactorcore project.\par
+\par
+It involves drawing MANY sprites on a huge sheet, then choosing how do I pack them into organized packages. Its meant as a mass-production method for creatings hundreds of sprites per chosen theme. \par
+\par
+I rarely draw anything individually on its own; instead I draw everything all at once at the same time.\par
+\par
+Its a method that is feasible for a single person to crank out thousands of sprites that are all standardized, modular/swappable/interchangable, reusable, intercompatible and highly flexible, intended to support giant game projects that have the potential for thousands of pieces of content. \par
+\par
+Each sprite can be repurposed as both an inventory icon or a physical physics-engine enabled object. There's a lot of built-in game design consideration baked into how they're made.\par
+\par
+This is how I build a new PSRC sprites package from start to end.\par
+\par
+\ul\b Steps:\ulnone\b0\par
+\par
+\pard{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sl276\slmult1 Choose subject/idea/theme.\par
+{\pntext\f0 2.\tab}Start with general megasheet and draw thing according to a larger, global theme (such as torso clothing, hat collection, ballistic guns, energy weapons, fruit n veg, electronics, grenades and explosive, shoes, road signs, etc).\par
+{\pntext\f0 3.\tab}Gain a deeper understanding of the theme/subject/idea (research, read, reference).\par
+{\pntext\f0 4.\tab}Prepare canvas of comfortable size and give it a soft desatured colored background that is pleasant to look at instead of the default pure white canvas. Prepare reference images for easy access and viewing during drawing, You're essentially sketching the objects from those reference images by eye approximation ("eeh kinda looks like this"). \line\par
+\b{\pntext\f0 5.\tab}ABSOLUTELY MAKE SURE YOU ARE SAVING THE IMAGE AS A LOSSLESS IMAGE FORMAT; That means using .PNG format or if you want to keep separate layer data too, then whatever format your program uses (.PSPIMAGE in Paint Shop Pro 9, .PSD in Photoshop, .PND in Paint.NET, .ASE for Asesprite, and so on.) \b0\line\line\ul\b NEVER, EVER SAVE ANY PIXEL ART AS .JPG FILE, IT WILL RUIN YOUR WORK.\ulnone\b0\line\par
+{\pntext\f0 6.\tab}Check scale standards (1m = 32px, human 1.85m = 60px). Stay consistent and constantly compare each sprite to human and real measurements where available. Use intuition if data is missing. That said, since PSRC is a hybrid real-cartoon style, make the final object be -20% more compact/condensed/smaller compared to true measurements. While its more accurate to say human is 1.85m hyper-realistically, I'm pretending the human is actually 1.75m tall with their same 60px height.\par
+{\pntext\f0 7.\tab}Draw subjects/objects in the order of the reference materials to later keep track of which one was which. I essentially draw objects in batches like a sandwitch factory; first as unshaded shapes/blobs which establish a base model with minimal detail if even that, then later I do a shading pass while also fixing scale/size issues and also making compromises between details I can include and what I skip over for sake of the finished piece.\par
+{\pntext\f0 8.\tab}First pass is to draw subjects with 3 shades; middle grey, light grey, dark grey, + black for "holes" and white for "markings". Much later, proper detail and shading/rendering is applied, but not now. This is done to first get the proportions and consistency of all objects right, to match them with the default human character before commiting to drawing them out in final detail. I want to have an array of everything that I can see an overview of it all, that they're correct size and proportions and look ok with the human.\par
+{\pntext\f0 9.\tab}Advance in the following stages (steps 9-12) when actually drawing:\par
+{\pntext\f0 10.\tab}Model out the initial shape by either drawing the outline using the line art method (for bigger straight things like wooden crates) or by drawing it as a grey blob (both cases use 128 luminance grey as the middle grey).\par
+{\pntext\f0 11.\tab}When drawing hard-to-see details on an object, where they might blend due to lack of shading, I would initially color them with bright red-blue colors. Use the color replacer to make them bright/dark/grey/whatever once the area around them is done. Can be useful if drawing complex objects as a technique.\par
+{\pntext\f0 12.\tab}Add major details using light grey, dark grey, white and black to "find" the distinctive shapes within the subject (if drawing a rifle like the AK-47, make the body of the gun middle grey, while grip and barrel can be dark grey, and the wooden parts can be bright grey. Use black for vent holes and white to mark where the fire selector would be). This technique helps you build the object in enough detail that it makes sense, even without shading at this stage.\par
+{\pntext\f0 13.\tab}Apply natural, neutral, ambient, top-right source shading (I use a 50% opacity burn brush, but you can also use a greyscale palette of 9 shades of grey or more.)\par
+{\pntext\f0 14.\tab}Also give a light/subtle atmospheric ambient shading that adds areas of reflected light.\par
+{\pntext\f0 15.\tab}Refine the sprites on sheets to their most complete forms (Greyscale)\line (As in: shape, scale and shading is finalized).\par
+{\pntext\f0 16.\tab}Extract completed objects to individual smaller sheets by groups/specific theme, try to fix any last moment issues with each object's scale, shape, shading here.\par
+{\pntext\f0 17.\tab}Align resulting sprites to sheets: "Optimized" (actual ingame use) and "InfoSheet" (letting the customer see what the pack has, as a showcase).\par
+{\pntext\f0 18.\tab}Sort and align the objects largest-to-smallest, along with top-Left_to_bottom-Right order (Unless it makes logical sense to have certain smaller objects before larger ones).\par
+{\pntext\f0 19.\tab}Make sure "Optimized" spritesheet's pixel resolution is Power of 2 (64x64px, 128x128px, 256x256px, 512x512px, and so on.)\par
+{\pntext\f0 20.\tab}Make "Optimized" sheet have transparent BG.\par
+{\pntext\f0 21.\tab}CLEAR ANY ROGUE PIXELS! You can create a new BG layer, flood fill it with neon green (hex color '#00ff00' or 'RGB 0,255,0', then switch to the sprites layer and use the eraser tool to delete any pixels you accidently left out that aren't supposed to be there around the objects. They're otherwise hard to spot against a transparent background, but this "green check" method reveals them quickly and easily. Delete the temporary green background layer afterwards.)\par
+{\pntext\f0 22.\tab}Create alternative sheets based of the grey template "Optimized" sheet\line (Colored, Alternative Colored, Darker, Lighter etc. whichever ones you need for your particular sheet. Lets say I'm making a set of cactus plants and I want them to have different coloring styles while the objects themselves stay the same, like winter style colors, tropical colors, wasteland colors, etc.)\par
+{\pntext\f0 23.\tab}Recheck shading and CLEAR ANY ROGUE PIXELS AGAIN! Just in case, they might sneak up on you. Again, use the green check method again if you feel like there might be those pesky rogue pixels somewhere in there.\par
+{\pntext\f0 24.\tab}Save sheets as "PSRC_PackName_Type.png" (as an example: 'PSRC_CactusPlants_Greyscale.png', 'PSRC_CactusPlants_Tropical.png', 'PSRC_CactusPlants_Winter.png', etc.)\par
+{\pntext\f0 25.\tab}Put said sheets into their own folders within 'PSRC Sprites' folder (if you're making a larger collection under a single namespace, where PSRC Sprites is a "master folder" where all your sprite packs live and each individual pack has its own folder like "PSRC CactusPlants" or something like that.)\par
+{\pntext\f0 26.\tab}Run through  Alferd Sprite Unpacker/Slicer to produce seperate images from sheets.\par
+{\pntext\f0 27.\tab}If its a multipart character, (i.e. dragon, huge snake, wolf, power armor), create a bone structure/rig for it and have some kind of demo files/images to explain to the customer how they should do the assembly of the subject - how they should use it).\par
+{\pntext\f0 28.\tab}OPTIONAL: Create special sheets (silhouettes only, wireframe only, stylistic black/white). Can be neat for convenience if the customer prefers ready-to-use styles instead of using their game engine to recolor/restyle the sprites using shaders.\par
+\pard\sl276\slmult1\par
+\ul\i Final Sheet Names:\par
+\ulnone\i0 1. PSRC_PackName_SheetType.png\par
+2. PSRC_PackName_SheetType_Subtype.png\par
+3. PSRC_PackName#_SheetType_Subtype#.png\par
+\par
+Ex:\par
+1. PSRC_UrbanMaintenance_Infosheet.png\par
+2. PSRC_StarterPack_Optimized_Template.png\par
+3. PSRC_KitchenGear2_Optimized_Color3.png\par
+\par
+\par
+\ul\i Object Names: \par
+\ulnone\b\i0 AFTER USING ALFERD TO CUT SHEET INTO INDIVIDUAL IMAGES, DO NOT RENAME INDIVIDUAL OBJECT SPRITE FILES TO WHAT THEY ARE, JUST LET USER PUT THEIR OWN NAMES OR USE AS IS. SOME SPRITES MAY BE MULTI-USE, INTERPRETED AS MANY DIFFERENT THINGS. NAMING THEM EXPLICITLY COULD BLOCK THIS CREATIVE USE.\par
+ \par
+NAMING ALSO CAN MESS UP THE SHEET ORDER UNLESS YOU NUMBER THEM WITH A PREFIX. GENERALLY YOUD WANT THE SORTING ORDER TO BE THE SAME FOR INDIVIDUAL OBJECTS AS THEY APPEAR ON THE ORIGINAL SHEET THEY WERE CUT FROM.\par
+\par
+PUT SLICED SPRITES INTO THEIR OWN SHEET NAME'D SUBFOLDERS. BASICALLY NAME SUBFOLDERS WITH "SHEET_TYPE". (Like "Template", "Color Red", "Tropical", etc.)\par
+\par
+DEFAULT ORIGINAL GREY 128 LUM VERSIONS IS ALWAYS CALLED "Template" SUBFOLDER.\b0\par
+\line\ul\b\par
+Ideas for how to organize and name individual sprites:\ulnone\b0\par
+\par
+\b\i TYPE1:\b0\i0  Subfolder - SheetType\par
+*SheetType_001.png\par
+\par
+\b\i TYPE2:\b0\i0  Name includes subtype\par
+*Packname_SheetType_001.png\par
+\par
+\b\i TYPE3:\b0\i0  Just a number\par
+*001.png\par
+\par
+Use whichever you feel works best for you. Each pack is different and may have different needs/considerations.\par
+\par
+\ul\b For final result you can use following folder structure:\ulnone\b0\par
+\par
+\pard\li720\sl276\slmult1 *Pixel Sprites Reactorcore\tab\tab (Global Root folder for all packs)\par
++*Name of theme/object/idea\tab\tab (Subfolder within Root)\par
+++Sheets\tab\tab\tab\tab (Optimized, InfoSheet, Specials)\par
+++*[sheetname]\tab\tab\tab (For each sheet, individual objects)\par
+++*Anims/Rigs folder \tab\tab (animations may be reusable for other objects)\b\par
+\b0\par
+* = folder\par
++* = subfolder\par
++ = file/folder within this depth level\par
+\pard\sl276\slmult1\par
+\par
+\ul\b Bonus: Settings for sprite image imports in Unity:\ulnone\b0\par
+-Type = Sprite (2D/uGUI)\par
+-Pixels per Unit = 32 (1m = 32px)\par
+-Filter mode = Point (Crispy look)\par
+-Format = 16bit\par
+\par
+\par
+\ul\b Aligning objects on the usable optimized spritesheet:\ulnone\b0\par
+For optimized sheet, ALWAYS layout the object comic-style Top to Bottom, Left to Right for better auto-ordering by sprite slicer applications. Pay close attention to the top-leftmost pixel, placing it always further to the right or below the previous object's top-leftmost pixel.\par
+\par
+\ul\b Alferd Spritesheet Unpacker\par
+\ulnone\b0\par
+{\field{\*\fldinst{HYPERLINK "https://forkandbeard.itch.io/asu"}}{\fldrslt{\ul\cf1 https://forkandbeard.itch.io/asu}}}\f0\fs22\par
+{\field{\*\fldinst{HYPERLINK "https://github.com/ForkandBeard/Alferd-Spritesheet-Unpacker"}}{\fldrslt{\ul\cf1 https://github.com/ForkandBeard/Alferd-Spritesheet-Unpacker}}}\f0\fs22\par
+\par
+(Links for you to download them if they ever got a big update for some reason, although they're already included with this PSRC Dev Kit so you don't actually need to.)\par
+\par
+\i ASU Settings:\i0\par
+Tile outline width = 1\par
+Distance between frames = 2\par
+Uncheck "Prompt for Export Folder"\par
+\par
+Make sure target folder is set up!\par
+Select all\par
+Result Check -> Export Selected -> Export to SheetType subfolder\par
+\par
+For better info with images, check the PDF I provided in the Dev Pack folder for ASU.\par
+\par
+\par
+\ul\b Coloring phase:\par
+\ulnone\b0 I only start coloring after I have my completed, fully optimized greyscale sheets. I never edit the original pixels of the greyscale sprites, I simply make a new copy of the greyscale sprite sheet as a new image, then on it, I draw on a new separate layer that magically applies the color to the greyscale objects without ever damaging them. All by using layer modes.\par
+\par
+This allows me to recolor, repattern, retexture the object as much as I want. It is one the easiest and most fun parts of the PSRC workflow.\par
+\par
+\pard{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sl276\slmult1 Make sure you're not overwriting the original greyscale image, simply duplicate/copypaste an existing optimized greyscale spritesheet and work on that without needing to worry about the original work being ruined.\par
+{\pntext\f0 2.\tab}Create a new raster layer with "Color" name.\par
+{\pntext\f0 3.\tab}Apply color to objects ON the new Color Layer, NOT the original grey-scale template.\par
+{\pntext\f0 4.\tab}Set the "Color" raster layer to 'Hard Light' mode in the layer settings. Other modes could be 'Color', 'Overlay', 'Screen', 'Multiply', etc. Whichever looks good to you.\par
+{\pntext\f0 5.\tab}(Optional) Using the "Curves" tool in PSP9, adjust the luminosity of the objects or color layer to desired levels if the end result seems a bit off regarding shading and readability.\par
+{\pntext\f0 6.\tab}Tweak colors & brightness/contrast/curves/gamma until it looks neat/ok.\par
+{\pntext\f0 7.\tab}Start with main colors. First use the magic wand tool to select everything that isn't the objects, inverse the selection so that only the objects are selected, now use a paintbrush over them safely to apply major colors as needed using rough brushstrokes/flood fills. Then apply the secondary colors/details to finish the coloring job.\par
+{\pntext\f0 8.\tab}Use desaturated/muted 50-70% saturation level colors generally for a nicer realistic-ish look, while attempting to match lightness when picking colors to paint with over the grey template objects.\par
+{\pntext\f0 9.\tab}Using the hue tools (Hue,Sat,Lig & Hue Map), you can easily create multiple quick alternative variations of colorings from the first one you painted.\par
+\pard\sl276\slmult1\par
+\pard\li360\sl276\slmult1\par
+\pard\sl276\slmult1\ul\b How to Write Global Readme File for all Packs:\ulnone\b0\par
+(Either for a store description or a !readme_packname.txt file)\ul\b\par
+\ulnone\b0\par
+The goal is to be concise, informative and clear. I'm trying to arm the customer/user with enough knowledge that'll be helpful to them, letting get the best out of the package.\par
+\par
+It should have these components:\par
+- # Title (Heading)\par
+- Series/Author marking\par
+\par
+- ## Short summary about pack (info/features/usage/hints)\par
+\par
+- ## Contents (what is included with this pack)\par
+\par
+- ## General art style system info (why this art style and what are the perks of using this)\par
+\par
+- ## License (Choose either CC-BY 4.0 (paid) or CC0 (free))\par
+\par
+- ## Contact info (Email or discord or whatever you want to be contacted with)\par
+\par
+- ## Links & Support (your store page, patreon, blog, linktree, website, etc)\par
+\par
+---\par
+EXAMPLE DESCRIPTION:\par
+(Copy-paste, edit as needed, save as .txt or .md file)\par
+\par
+# Human Character\par
+Pixel Sprites a la Reactorcore (PSRC)\par
+\par
+## About\par
+Human being pixel art sprites for a modular paper-doll style physics ragdoll character for game development or 2D animation uses.\par
+\par
+Contains separate torsos, heads, limbs, hands and arms that you can attach and combine how you like in your projects. Comes with several realistic skin tone options.\par
+\par
+## What is included:\par
++ \b Infosheet -\b0  for reference, overview and information of everything in the pack.\par
++ \b Optimized sheets\b0  - all sprites are crammed into it in the same order as the individual images from top left to bottom right comic style reading order.\par
++ \b Individual images -\b0  these are found in the subfolders if you prefer them this way.\par
+\par
+## PSRC Standard Scale\par
+Remember these universal rules that apply to all PSRC sprites:\par
+- 1 Meter = 32 Pixels\par
+- 8 pixels = 25cm\par
+- Average Human = around 60 pixels tall or 1,75m\par
+- Hybrid real-cartoon style, realistic measurements but -20% more compact.\par
+- Zoom in up to 600%\par
+- Zoom out up to 25%\par
+\par
+## Detailed PSRC artstyle information\par
+PSRC is a comprehensive visual representation system for a 2D sideview game.\par
+\par
+* Highly flexible; capable of supporting a complete universe simulator super game (sort of like open world sandbox games, but directed). \par
+\par
+* Easily extendable and modifiable; all assets are provided as greyscale value images that can take on any colors via an overlay layer.\par
+\par
+* Easy to learn and expand; sprites are drawn according to a straighforward process that anyone can learn.\par
+\par
+* Not perfect and thats a good thing; anyone that extends the sprite set doesn't have to be exact as long they use the same palette and principles - resulting in varied and rich objects that despite being drawn by different artists with relatively different tools (Paintshop Pro 9, Asesprite, Graphics Gale, Paint.NET, etc), they are all still compatible.\par
+\par
+* Indie-ready, Modder-friendly, Inclusive collaboration wise - meaning I could easily bring in outside people to work on a project and give them clear instructions to produce quality standardized content that isn't overwhelming or intimidating to grasp.\par
+\par
+* Uses neutral shading so it can work fine with most lighting system solutions out there.\par
+\par
+* The human character is effectively a robust custom character system allowing for very rich modular customization, yet still providing sane standards to make designing clothes, hairstyles and other addons managable - both in terms of drawing them and in terms of size/shape categories. They can be used as a physics ragdoll, a pre-rendered set of animation frames, an inverse-kinematic driven rigged 2D paper-doll model, or any combination of the above per game project.\par
+\par
+* Can be zoomed between 25%-600% size scale and still look great and visually crisp.\par
+\par
+* Can be combined with lowpoly 2D/3D models or scalable vector shapes (triangles, squares, circles) along with seamlessly tiled texture images and overlay color shaders to serve large or huge objects that are otherwise too big to be drawn by hand. This creates a tandem system that can handle anything from a tiny flower to an entire mountain, or planet or even a massive star. Perfect for an open world universe simulation game that plays like a 2D platformer.\par
+\par
+## License\par
+CC-BY 4.0\par
+It means you can use commercially, but you must include the following info in the credits:\par
+\par
+Pixel art sprites by Reactorcore\par
+{\field{\*\fldinst{HYPERLINK "https://reactorcore.itch.io/"}}{\fldrslt{\ul\cf1 https://reactorcore.itch.io/}}}\f0\fs22\par
+\par
+## Contact the Author\par
+\par
+If you have questions, requests, ideas, etc just send an email to:\par
+{\field{\*\fldinst{HYPERLINK "mailto:reactorcoregames@gmail.com"}}{\fldrslt{\ul\cf1 mailto:reactorcoregames@gmail.com}}}\f0\fs22\par
+\par
+## Check my other stuff\par
+If you liked this pack, you might enjoy my other things too.\par
+\par
+I release games, software, mods, assets and more on my itch page: \par
+{\field{\*\fldinst{HYPERLINK "https://reactorcore.itch.io/"}}{\fldrslt{\ul\cf1 https://reactorcore.itch.io/}}}\f0\fs22\par
+\par
+Join as a Patreon member for tons of benefits and my read my gamedev blog: \par
+{\field{\*\fldinst{HYPERLINK "https://www.patreon.com/ReactorcoreGames"}}{\fldrslt{\ul\cf1 https://www.patreon.com/ReactorcoreGames}}}\f0\fs22\par
+\par
+Visit my linktree or discord server:\par
+{\field{\*\fldinst{HYPERLINK "https://linktr.ee/reactorcore"}}{\fldrslt{\ul\cf1 https://linktr.ee/reactorcore}}}\f0\fs22\par
+{\field{\*\fldinst{HYPERLINK "https://discord.gg/UdRavGhj47"}}{\fldrslt{\ul\cf1 https://discord.gg/UdRavGhj47}}}\f0\fs22\par
+\par
+Enjoy! B-)\par
+- Reactorcore\par
+---\par
+\b Then I just save this as markdown or txt file with this kind of filename:\par
+!info_[Author]_[PackName].md/txt\par
+\b0\par
+Like so:\par
+\b !info_PSRC_HumanCharacterMk2.md\b0\par
+\par
+I put the exlamation mark (\b !\b0 ) in there so it is sorted as first in a folder. Small useful trick to keep a folder organized when used for most important files.\par
+\par
+\par
+\ul\b Screenshots & Keyimages for Stores:\ulnone\b0\par
+Just take the greyscale sheet and any colored versions and create non-stealable release images for them:\par
+\par
+1. Resize image by 300%, 400%, 500% or 600% (Pixel Resize or Nearest Neighbour, no Anti-alias). Use bigger resizes for smaller pixel resolution sheets, like 128px = 500%, 256px = 400%, etc.\par
+2. Rotate image by 5 degrees left (counter-clockwise)\par
+3. Resize image by 99% (same, pixel resize too)\par
+4. Add a watermark text in one of the corners (Use the text to write your author name)\par
+Save as a new JPG image.\par
+\par
+Done, you now have useful images for store, social media and promotion. You can further crop for zoomed in highlights or different aspect ratios, resize bigger versions (starting from step 1 though) and use them as base/background for promotional text that you can write on top of the image when making an announcement, a sale or a teaser.\par
+\par
+The result is good because its:\par
+- Its large without needing to zoom in\par
+- It shows everything clearly\par
+- It is easy and quick for me to make, even possible to automate too, done with a single click\par
+- It "ruins" the image so it becomes unusable for anyone trying to right-click>save-as to try to "steal" the pixel art package without paying for it or without downloading the official package\par
+- Yet despite "ruining it", it still pretty and impressive enough for showing off on the store\par
+- Has my author name on it if it gets shared around on the internet\par
+\par
+\par
+\ul\b Multipart Object Mockup Screenshots & Prefab Demos\par
+\par
+\ulnone\b0 If I'm making a multipart character or a composite thing that is assembled from multiple separate sprites, then I should assemble them into a static mockup so people can see what it might look like when assembled.\par
+\par
+Create a !Demo folder, which may contain an example of the assembled character. Nothing fancy, not animated or rigged. Just a prefab that shows the final result on how the character is supposed to be put together, how the layers or game object structure are to be sorted and how might the parts be named.\par
+\par
+Commonly, these three poses could be useful:\par
+1. Natural common action pose (walking, posing, running, leaping)\par
+2. Stiff idle standing pose (Just standing up straight, nothing special)\par
+3. Functional stiff pose (Emphasis on showing all limbs and connections)\par
+\par
+Using these prefabs, a screenshot of 300-600% magnification is taken and put against a 236 Lum grey background (RGB 236,236,236 or Hex #eeeeee).\par
+\par
+\par
+\ul\b Changelogs & versioning if publishing updates to released PSRC packages:\par
+\par
+\ulnone\b0 Add a changelog only on the second release after patching, otherwise its pointless to have in a fresh pack.\par
+\par
+Use a simple v1.0.0 style versioning system. First number is Major Overhaul, second number is Notable Update, third is Maintenance Patch. This keeps the naming simple, less arbitrary and faster to recognize if you have the newest version or not.\par
+\par
+\par
+\ul\b Art Tips: Shading, Materials\ulnone\b0\par
+\par
+Shading stuff basically depends on two distinct aspects: Glossiness and Texture.\par
+Also the shape/geometry of the object itself, but thats a given.\par
+\par
+If something is very \ul shiny, glossy\ulnone , then shading will be of \b high-contrast \b0 type.\par
+Conversively, if something is \ul dull, flat\ulnone , then shading will be \b low-contrast\b0 .\par
+\par
+Another aspect is Reflectiveness. This occurs with materials like metal and glass.\par
+The whole idea behind reflective materials is reflection. They basically reflect the area(the emitted light) around them on their surface like a mirror. The shape of the reflective object can distort the reflection and curve the light.\par
+\par
+As a general rule, all objects are to be shaded with a top-right-downwards light (sun) and a dim, atmospheric reflected ambient light. Dull materials are shaded flat, while Glossy materials are shaded strongly with higher contrast.\par
+\par
+Texture is merely an extension of the shape of the object, but it plays a role in defining the shininess of an object. If the object is rough, it will be dull, but if its clean flat, it will be shiny.\par
+But ultimately, texture is just the shape of the object on a micro-level, which defines where shadows and highlights may fall at a tiny scale.\par
+\par
+Also, as pixel art happens on such a tiny scale, simplification is necessary. The idea is to convert areas/objects of high detail with more arbstract simplified representation of said areas.\par
+\par
+\par
+\ul\b Art Tips: Coloring & Hue Shifting\ulnone\b0\par
+\pard\sl240\slmult1\par
+Coloring happens by adding a new layer in the mode "Hard Light, Overlay, Screen, Multiply, or Color (Legacy)", then adding the desired color. After the color is added, the greyscale templates underneath are adjusted with the Curves tool (kind of like brightness and contrast tool, but it uses curves to adjust highlights, middles and darks of an image's pixels) to match the luminosity of the desired color and desired final result.\par
+\par
+As an emulation of reflective/atmospheric light or distance, Hue Shitfing can be used optionally.\par
+\par
+Basically, there is the main middle color that is the natural color of the object, meanwhile shadows rotate towards the cooler tone (Clockwise -> , red to purple-blue-green) and highlights rotate towards warmer tones (Counter-clockwise <-, red to orange-yellow-green).\par
+\par
+Personally, this is only applicable on larger sprites that have a supposed, but very insignificant source of light that may illuminate another surface of that same object, causing a hue shift at that location only, because its basically a reflective/additional lightsource.\par
+\par
+By "insignificant light source", I mean a supposed light source so small or ambient that it doesn't warrant an actual projection of light by the game's engine. It is mostly a suggested light source, but doesn't actually shine real light.\par
+\par
+\pard\sl276\slmult1\par
+\ul\b Art Tips: Large objects - Sketching/Measurement/Structuring\ulnone\b0\par
+\par
+Althought small objects already are sort of sketched through blobbing the silhouette, things of larger size may benefit from proper sketch lines, guiding lines and measuring lines.\par
+\par
+These are done on a seperate, disposable layer which mimics how traditional pencil artists actually draw art, where they draw wireframes, basic 3D shapes and lines to help them measure, estimate and guess how they should draw something before they actually draw the true lines that'll be the final ones.\par
+\par
+There's plenty of youtube video tutorials by people like Proko, Sycra, FZD Studio, and many others that show fundamentals of drawing. Its basically about applying that to the initial stages of pixel art.\par
+\pard\sl240\slmult1\par
+\par
+\ul\b Art Tips: Additional miscellanous tips\ulnone\b0\par
+\par
+\b * Critical gameplay objects (player characters) vs Background Items:\b0\par
+When playing a 2D video game its comfortable to the player to have good visual clarity what belongs to the background and isn't relevant to the action. \par
+\par
+So things like backgrounds or background props/decorations should be desaturated and have less contrast, making them more dull and flat compared to active characters on the screen, projectiles, items and other active foreground props, which pop out more by having stronger color saturation and stronger contrast (darker darks and brighter brights).\par
+\par
+So when coloring objects for game-use, its a good idea to clamp certain ranges of color saturation and contrast/brightness, for objects you know will be used for background or foreground purposes.\par
+\par
+\par
+\b * PSRC's Hybrid Cartoon-Realistic Style with -20% Size Reduction:\b0\par
+Game engines that deal with physics or collisions work better when objects are not thin. \par
+\par
+An example of this is a fast moving projectile that tries to collide with a thin object but unexpected doesn't register the hit and just flies past it like it wasn't there; this is a common issue and there are workaround to fix it, but it is easier to make game objects more chunky/compact/thick and to restrict maximum velocities of moving things so that objects are guaranteed to collide properly with each other.\par
+\par
+Besides that, controlling a character with cartoony proportions is often more fun and easier to see properly, since hyperrealistic measurements may not always lead to more enjoyable gameplay or visual style. Its the reason why the head is so big on the PSRC Human Mk2 character so that I could fully fit a full suite of facial details on it within the tiny pixel art constraints that I'm working with.\par
+\par
+\par
+\b * Using Textures to add "teeth/grip" to surfaces or skip tedious work:\b0\par
+When drawing things with large surfaces and monotone details, you can skip some of the work during shading or modelling by using a seamlessly tiling texture.\par
+\par
+Very useful for things like leaves on a tree or bush, wood surface on wooden boxes, dents on a meteor, or scratches/rust on a metal panel.\par
+\par
+Create a new layer, set it to overlay mode, tweak the layer opacity as needed, use the flood fill tool with an existing pixel art seamless repeating texture image (like those used on Minecraft blocks, except greyscale) as the paint. This combined with a magic wand selection tool or similar will instantly let you fill in the areas you want with the texture from that image source as a repeating pattern. \par
+\par
+This technique can save you a lot of time than trying to shade each individual leaf by hand.\par
+\par
+\par
+\b * Overlaying decals/complex forms over simple shapes:\b0\par
+One cool trick is to create smaller reusable decals that you can then copy-paste or use a clone brush or use an overlay mode layer to apply to other objects to insert elements, shapes, patterns or symbols onto larger objects without having to redraw them manually each time.\par
+\par
+\par
+\b * My personal thinking process when I draw PSRC sprites:\b0\par
+\par
+When drawing from reference, I first outline the size of the object by measuring the dimensions (lenght & height) according to the 32px/1m standard. \par
+\par
+Then, I proceed to think of the process of drawing from the reference as if I'm doing the activity of Rock Wall Climbing as a metaphor. I look for easy nooks/anchors to place my "hand" or "foot" in so I can climb higher towards my destination.\par
+\par
+Translated to pixel art drawing, I look for the easiest "prominent/remarkable, yet simple shapes" that I can most easiest focus on and I will draw the object by first drawing these "anchors", then bridging the gap between the two. This method/thinking is especially useful when drawing complex machinery with many components.\par
+\par
+I use the 5 colors freely, that is, grey, light grey and dark grey to define structures, black for holes where light does not shine and white for light emissions or writings, markings, symbols. \par
+\par
+I don't use a single color to draw something unless its really simple. Most things are too hard for my mind to comprehend and keep track of what I'm doing due to lack of seperation of sectors in the object during initial drawing when I don't have any shading yet.\par
+\par
+I also utilize 4 primary colors (red, blue, green, yellow) to temporarily mark important parts to better distinguish the shape during the initial structuring of the object. Later, I convert them to greys as mentioned above. I do this if it feels too complex to handle with only greys. Its a useful handicap/crutch to get through tough parts.\par
+\par
+I begin drawing by using rough blobs or approximate rough sketch lines to define the shape of the object I want to draw. This helps my mind to picture the scope and complexity of the object more clearly, to give me some peace of mind and offload the amount of data I need to keep at once in my head.\par
+\par
+I prefer to start with the part that is both easiest to draw, but also most significant or important to that object, like wheels on a car or bike or a head on a human or animal. I then draw the rest based on that while also adjusting measurements of both the starting piece and the other things around it to make sure I'm not going off track too much.\par
+\par
+For the canvas, I either pick a lime green/purple color, or a soft desatured matte color that suits the mood, to both make the grey object stand out, but also not burn my eyes/retinas or make me squint to comprehend the image due to bg and object being too blended together.\par
+\par
+After getting the basic proportions and structure down, I focus on gradually bringing out the details out of the reference image as much as possible, but making concessions where there are just not enough pixels to fit something in. While doing it, I compare the subject I'm drawing with a floating human sprite template on a seperate layer that I can freely move around whenever I want to. This little trick helps me see and adjust proportions and sizes to be more sensible and useful, since usually i'll be mistaken in the first pass anyway. I rarely get it right the first time, its always an iterative process that starts messy and becomes better over time.\par
+\par
+Lastly, I may go look up a tutorial or a cheat sheet on how I should render the texture or material of the object to make it look right according the standard 'top-right-front lighting' + 'ambient omni light'. This is where I do the shading to bring out the correct level of shininess or matte or smoothness or roughness for each part of the object.\par
+\par
+\pard\sl276\slmult1 Then I just fix whatever looks off about the sprite until it feels right to me.\par
+\par
+- Reactorcore\par
+}
+ 

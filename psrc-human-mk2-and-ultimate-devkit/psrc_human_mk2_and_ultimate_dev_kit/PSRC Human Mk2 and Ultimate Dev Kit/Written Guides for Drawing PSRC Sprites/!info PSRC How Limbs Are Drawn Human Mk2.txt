@@ -1,0 +1,63 @@
+PSRC Human mk2 Character Information
+====================================
+
+How limbs are drawn:
+
+--
+
+Arms - (Sideview)
+* simplest to draw.
+* emphasize shoulder.
+
+Hands - (Topview / Exterior)
+* easiest to draw.
+* best for holding objects.
+* excellent for hand gestures.
+
+Legs - (Pseudo Front-Side view)
+* pure sideview legs lack detail
+  so they're not enough.
+* legs are drawn first front, then
+  extruded backwards to create side.
+* this way knees are properly visible,
+  it matches with torso's structure,
+  and more detail for limb and cloth
+  is now possible.
+
+Feet - (Sideview)
+* simplest to draw.
+* shoes are easiest cloth to draw.  
+
+Torso - (Complex front-side view)
+* initially carved out into a desired-ish
+  silhouette of a 26x16px rectangle chunk.
+* then partitioned into zones, namely
+  shoulders, bottom, belly and breasts,
+  with neck and waist coming in later
+  adapting to the rest of the zones.
+  all mainly for clarity purposes.
+* sort of emphasize the same "draw
+  front first, then extrude to side"
+  method, but unlike legs, there is no
+  strict symmetry for the front part,
+  making the torso's structure more 
+  organic than rest of the limbs.
+  
+--
+  
+For all limbs, extensive reference images were
+used to get measurements, proportions and
+shapes somewhat correct, within the confines
+of pixel art, taking liberties where deemed
+necessary for sake of simplicity or readability.
+Hence why the head is slightly larger than a
+real-life equivalent or why the torso's limb
+connections are perhaps a bit odd looking.
+
+I'm aiming at a slightly cartoony look in PSRC
+that would work better with a 2D physics engine,
+since collisions work more reliably if objects
+are not too thin. I also think it looks cuter, more
+endearing and clear. The PSRC sprites are intended for
+game projects primarily, hence the priorities
+that shaped the design decisions of how it looks.

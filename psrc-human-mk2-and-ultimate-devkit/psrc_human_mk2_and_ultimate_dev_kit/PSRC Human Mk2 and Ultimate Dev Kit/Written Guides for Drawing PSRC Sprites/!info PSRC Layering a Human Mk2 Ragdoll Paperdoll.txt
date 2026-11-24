@@ -1,0 +1,67 @@
+Layering the human correctly:
+=============================
+
+Whether you're a gamedev or illustrator and need info on how to layer the PSRC human correctly in your editor, this will help understand the order.
+-XX numbers are negative, so they go BEHIND thing, +XX numbers are positive, so they go FRONT of thing. +1 is the torso, the central CORE piece.
+
+Because the PSRC human is modular, clothes are seperate sprites, hence why some layers are reserved for them to avoid visibility conflicts.
+
+--
+
+
+-19 Torso BG clothes OPTION 3 - behind everything.
+
+-18 BG Arm BG Clothes Layer 1
+-17 BG Arm BG Clothes Layer 2
+-16 BG Arm BG Clothes Layer 3
+-15 BG Arm Upper
+-14 BG Arm Lower
+-13 BG Arm Hand
+-12 BG Arm FG Clothes Layer 1
+-11 BG Arm FG Clothes Layer 2
+-10 BG Arm FG Clothes Layer 3
+
+-9 BG Leg BG Clothes Layer 1 - also used for Hip BG mounts.
+-8 BG Leg BG Clothes Layer 2
+-7 BG Leg BG Clothes Layer 3
+-6 BG Leg Upper
+-5 BG Leg Lower	- notice how lower leg/arm for both BG and FG is always on top of the upper part. If it wasn't, the knee or elbow wouldn't be visible.
+-4 BG Leg Foot
+-3 BG Leg FG Clothes Layer 1
+-2 BG Leg FG Clothes Layer 2
+-1 BG Leg FG Clothes Layer 3
+
++0 Torso BG Clothes
++1 Torso = core
++2 Torso Clothes OPTION 1 - under legs.
+
++3 Head BG Clothes - also used for Shoulder BG mounts.
++4 Head
++5 Head FG Clothes - also used for Shoulder FG mounts.
+
++6 FG Leg BG Clothes Layer 1
++7 FG Leg BG Clothes Layer 2
++8 FG Leg BG Clothes Layer 3
++10 FG Leg Upper
++11 FG Leg Lower
++12 FG Leg Foot
++13 FG Leg FG Clothes Layer 1
++14 FG Leg FG Clothes Layer 2
++15 FG Leg FG Clothes Layer 3
+
++16 Torso Clothes OPTION 2 - over legs AND head (thick collar) - also used for Hip FG mounts.
+
++17 FG Arm BG Clothes Layer 1
++18 FG Arm BG Clothes Layer 2
++19 FG Arm BG Clothes Layer 3
++20 FG Arm Upper
++21 FG Arm Lower
++22 FG Arm Hand
++23 FG Arm FG Clothes Layer 1
++24 FG Arm FG Clothes Layer 2
++25 FG Arm FG Clothes Layer 3
+
+
+--
+
+NOTE: lower leg/arm for both BG and FG is always on top of the upper part. If it wasn't, the knee or elbow wouldn't be visible. This is intentional.

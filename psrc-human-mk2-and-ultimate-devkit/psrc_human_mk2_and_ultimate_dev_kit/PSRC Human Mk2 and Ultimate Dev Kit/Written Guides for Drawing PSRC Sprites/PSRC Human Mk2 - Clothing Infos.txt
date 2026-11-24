@@ -1,0 +1,77 @@
+PSRC Human Mk2 - Clothing Info
+
+--
+
+Components of clothing
+
+Head	(front but extruded side to back) - normal, slim and wide versions - '(6x5)x3' pieces (90 head shapes total)
+		count: 3x full head s, m, l - 2x upper head s, m&l - 3x lower head s, m, l. No form-fitting versions (would require 5+6=11 variants, while this only needs 3).
+Torso	(front drawn, but extruded at the back to create a side - sort of a pseudo isometric/45' degree facing format)
+		count: 9 main types x 2 sex (male/female) x 2 normal/muscle versions x 3 belly sizes x 4 tit sizes = 432 total unique torsos, max.
+		
+Arm 	(sideview) - s, m, l, xl (both muscle and normal)
+Leg 	(same as torso/head; front but extruded side) - s, m, l, xl (both muscle and normal)
+Foot	(sideview) - s, m, l, xl (both muscle and normal)
+Hand 	(sideview) - s, m, l (only normal) - 2x frames: Open hand + Closed hand (note: any other hand gestures are only visible/usable without any handware.)
+		other possible hand frames: thumb up, point finger, fuck off, rock on, finger gun, call me phone/radical, gun/tool trigger grip
+		other future hand frame ideas: forward fist, italian explainer, grabbing down, palm up offering, pinkie extend, victory sign, OK, pickup pinch, thin palm/hand blade, beggar cup, dinero/cost money, eye tube telescope, flick, sock puppet, spread hand. (+maybe more)
+		(Note to self - do these in future, not now)
+
+--
+
+Main torso types
+1. S/S small shoulder, small ass
+2. M/M medium should, medium ass
+3. L/L large shoulder, large ass
+
+4. S/M small shoulder, medium ass
+5. S/L small shoulder, large ass
+
+6. M/S medium should, small ass
+7. M/L medium should, large ass
+
+8. L/S large shoulder, small ass
+9. L/M large shoulder, medium ass
+
+--
+
+Torso clothing special info:
+############################
+
+LOOSE FIT - wide cover that extends over silhouette like a bag, regardless of shape underneath.
+=========
+
+3 size types - Small, Medium, Large (S, M, L)
+Top piece (can cover from neck to bottom, up to 26px (torso full lenght)) and bottom piece (only ass, 9px).
+
+If tits, use adapter module on top of base cloth or as a standalone piece of clothing. Otherwise 1 pixel will peek out at front - bad.
+Bellies are already compatible and fully covered by all loose fit clothes.
+
+Upper piece works for all 9 main torso types - both female and male.
+
+
+FORM FIT - tightly hugs the body according to absolute silhouette of sprite.
+========
+
+Because the total amount of torsos is a whopping 24x18=432(!) - sex, belly, tits, muscles - maintaining that many instances/types of form-fitting clothes is lunacy.
+Thankfully, they all stem from the original main 9 torso types, so this narrows the variants to only that number.
+However, because tits and bellies may modify the silhouette - tits by 1 pixel at front-mid-upper, while belly by 1-2 pixels at front-mid and front-low - they are handled by standalone adapter sprites based on the 3 tits (not including flat 4th) and 2 bellies (not including standard).
+Said belly and tit adapter sprites are fitted on top of base cloth or just used on their own as standalone pieces of clothing.
+
+Besides the silhouette difference, bellies and tits also pose a shading/form/structure difference that also warrant them to be drawn as a unique module, preventing the the use of form fitting clothing without also using an adapter for tits/belly too.
+
+So overall, there are full body form-fits (9) for each main torso - and there are also partial form fits which are broken down into:
+Shoulders (3x), Asses (3x) and Mid-sections (9x).
+Both accept adapter cloth modules to handled all tits and belly sizes besides the flat ones that a torso comes with by default.
+
+As an extra idea, fully enclosed bodysuits that cover the entire body can "squish" larger bellies or tits, overriding them and just defaulting to use the original 1-9 core torso instead while the suit is on, as if the tits and belly were the flat default ones. The moment the suit is removed, the body reverts to its previous state.
+
+--
+
+Drawing Clothes
+
+Easy:				Feet, Hands, Arms = draw just pure sideview.
+Intermediate: 		Torso, Head, Legs = draw front, then extruded side at back.
+
+Overall the entire system is very systematic that anyone could get a handle on drawing clothes for the PSRC Human Mk2 model.
+Basic understanding of value based drawing, lighting, color selection, palette, layers/layer modes, usage of Paint Shop Pro 9 or Paint.NET or similar is needed to be taught and provided for anyone wanting to create new clothes for the PSRC Human Mk2 - beside's PSRC's own rules, limit frames and systems.

@@ -1,0 +1,6 @@
+Tilesheet information:
+
+Tilemap size              •  18px × 18px
+Characters size           •  24px × 24px
+Space between tiles       •  1px × 1px
+---

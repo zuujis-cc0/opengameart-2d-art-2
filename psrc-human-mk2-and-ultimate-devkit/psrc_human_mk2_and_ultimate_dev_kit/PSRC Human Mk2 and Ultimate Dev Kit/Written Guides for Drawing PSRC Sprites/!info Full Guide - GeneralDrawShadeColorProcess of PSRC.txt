@@ -1,0 +1,481 @@
+# Ultimate Guide to General Drawing, Shading, Coloring process of Pixel Sprites ala Reactorcore (PSRC)
+
+==
+
+SUMMARY
+
+
+--
+
+The purpose of this document is to make you into a pro at making PSRC sprites yourself.
+It will explain the complete process how to make any sprite of any object that will work with the PSRC style seamlessly.
+
+==
+
+BASICS
+
+
+--
+
+Multiple approaches to drawing sprites:
+
+
+--
+
+Blobbing - draw solid shapes in a single color as silhouettes.
+* easy to draw, but only usable for most simple of objects,
+  that are often composed of a single basic geometric element (circle, triangle, rectangle, etc).
+* not suitable for complex, multi-detail, multi-section objects.
+  mostly because its difficult to comprehend where is what detail/section or how big/small that detail/section is meant to be - since its all just a single color blob.
+* can either be started from nothing and draw shapes in, or started with a solid rectangle from which the final shape is carved from by removing bits around it.  
+  
+Lineart - draw outlines of object, then fill them in.
+* reliable, but cannot be used for too small size of objects since the outlines would make it bloated to appear far larger than its meant to be ingame.
+
+Multicolor Blobbing - draw solid shapes/sections, but use different color for each section/detail of the object.
+* when basic blobbing is not enough for more complex object, use multiple differently colored blobs to help with drawing its various sections and details.
+* most common method for drawing anything, except for the very largest of objects which are easier to start with lineart, then complete with blobbing or multicolor blobbing.
+
+
+--
+
+With all approaches, eventually once the shapes, detail, markings and so on are accurate to the reference image(s), I will then apply shading, then apply optional coloring via a seperate "overlay" mode layer if I need to do it manually (as opposed to letting a game engine color the sprite automatically).
+
+In a game, technically the rendering system of the game itself could use a shader to apply a desired color and even assemble an object if its made from multiple parts, flattening them all into a single sprite for ingame use, automatically. If there is no such system to use, then just assemble and apply the colors manually into game-ready sprites yourself, though the downside of manually-assembled sprites is they're less flexible than automatic program-managed sprite changes.
+
+==
+  
+General Process of drawing PSRC sprites:
+
+
+--
+
+PSRC is intended as a mass production process:
+Look at existing concept art, photos, blueprints, images etc. >>> Replicate image in greyscale with pixel art >>> Use it in a game/media, color it if need be.
+
+Draw many small-medium sized objects on large sheets - do shapes and shading in phases, organize all onto convenient atlases/spritesheets.
+
+Maintain a good basic level of quality, check for errors, make corrections. Making mistakes is part of the process and this is ok - as long as you fix it.
+
+
+--
+
+PSRC is not a good format for making sketches or ideas. 
+
+Its about taking existing ideas, photos and schematics, then converting them into a unified library of sprites with a specific style where everything works together in one universe! Imagine one game that can have infinite potential for anything you can dream of - and everything will fit together so you can combine anything without it looking inconsistent or wrong due to size differences, style differences or shape differences.
+
+Meanwhile anything you create for one game can be used for other games too - its directly compatible!
+
+
+==
+
+DRAWING PREPARATION
+
+--
+
+First know what you're drawing and why - for what purpose, how will it work, how will it be used, in what context. 
+
+These factors will greatly impact in how the subject should be drawn to begin with.
+
+Things like, should it be drawn side-view, front-view or even top-view?
+Things like, should it be as a single-piece or in multiple components?
+
+The answer to both of these question depends on how is the object supposed to be used in the game? Is it a background element, a usable object etc. A good idea is to look at existing PSRC sprites and notice how they're drawn and take a guess how they'd be used in a game most likely.
+
+Normally when I draw something, I draw them in batches, i.e. groups of many similar or related objects all on one big sheet. 
+
+I only do individual objects rarely on their own, mostly because PSRC is a standardized library where everything is supposed to work with everything together, so it helps maintain consistent level of quality by having other objects in the batch support each other measurement, style, shading and proportion wise.
+On top of that, I also often look at older sprites while I draw new ones - often including the old finished sprites on the sheet I'm drawing - so that I always have an example that I try to respect with the newer sprites.
+
+If I didn't do that, the risk of accidently making something too long, too short, too dark, too bright or badly shaped is greatly increased.
+
+
+--
+
+Next gather necessary reference materials - clear images of subject where the shape and lighting are enough good that it would be easy to understand, information on measurements of how big/wide/tall it is and what type of material/texture its made from, like shiny, glossy, matte, transparent, metal, wood, fabric etc.
+
+I want to be able to constantly jump back and forth between the image editor and the image viewer that displays the reference material, so I can replicate it accurately.
+
+I can get reference images from photographing things I want to draw, doing simple sketches/doodles with pencil and paper - either by myself or by a concept artist, finding pictures or photos online, find pictures in real life magazines / books / advertisements or physically having the object I want to draw at my desk.
+
+Measurements are VERY important. 1 Meter is 32 pixels.
+Remember that by heart.
+
+If I fail to accurately measure objects and just try to draw them, I can easily mess up and create objects that look wierd and bad - too wide/tall, too narrow/short. When viewed next a human sprite, who is supposed hold it, interact with it or otherwise stand next to it, it would look terrible and mismatched.
+
+
+--
+
+Now set up the canvas of an image editor to what feels most comfortable to draw the sprite correctly.
+
+In my case, I use a soft desaturated background color to draw on - something that differs from the colors I draw with and is also pleasant to look at and doesn't interfere with magic wand selections. 
+
+Then I have a grid function that I can turn on and off in the program with 8x8, 16x16 or 32x32 pixel sized grid, allowing me to better know measurements of the canvas and the scale of the objects I should draw. 
+
+Additionally I may have example sprites or even simple rectangles of 8x8, 16x16, 32x32 and/or 64x64 placed/copied/drawn somewhere on the sheet as a reference point that I can look at and compare my drawing with.
+
+Finally I may also have the standard PSRC grey palette on a seperate image or cloned/copied onto the sheet I'm drawing on, for convenience and faster color switching.
+Usually the best sprite to have on the sheet for comparison is a fully assembled human character (generic grey color template), because the human is the centerpiece that everything else revolves around in PSRC's system/standard. I can use the select tool in an image editor to grab the thing I'm drawing or the human itself and then move and juxtapose them along each other at various positions to get a good sense if something looks correct or wrong, either measurement wise, shading wise or style wise.
+
+
+--
+
+With everything set up, I now can begin to draw. 
+
+Important here is that anything that is drawn, usually should face towards right. >>>
+
+I decide - or experiment - which of the approaches would be best to draw the sprite - blobs or lineart. Sometimes its obvious, sometimes its trial and error.
+
+While constantly looking at the reference images, the grid and the comparison sprites I prepared, I draw the objects using whatever tools that get the job done.
+
+Usually thats the paint brush, eyedropper/color select, color replacer tool, floodfill tool, selection rectangle, magic wand, holding shift with paint brush to draw straight lines between two points and a lot of Undo-Redo command usage. Coloring phase uses the same tools too.
+
+Also "rotate image", "flip image" and "mirror image" functions are used often after I selected something.
+Sometimes creating a new layer is useful if I want to first draw a section/detail outside of the main object and then later move it inside the object simply because its easier to work on a smaller piece on its own than trying to work on it while its surrounded by a lot of other detail that makes it difficult to visualize otherwise.
+
+During shading, Paint Shop Pro 9 has a tool called burn brush, which allows me to left click to make a pixel darker, while right click to make it lighter. If such a tool is missing from the program I'm using, I'd probably just have my standard PSRC grey palette copied somewhere on the sheet/image I'm working on and use the eyedropper tool to pick what shade of grey I want to do shading with next.
+
+
+--
+
+Sidenote about Paint Shop Pro 9 by Jasc:
+
+Paint Shop Pro 9 is really good because it allows me to map 2 seperate colors for the left/right mousebuttons, allowing me to have one color I draw with, while the other color be the same color as the background - sort of working like an eraser that is always available, without having to switch tools every time I made a mistake or need something removed. The mousewheel will instantly zoom in/out without needing to hold another key while doing so.
+
+In Paint Shop Pro 9, I also use ctrl, alt and shift keys to quickly access functions that greatly speed up work, such as:
+-hold ctrl while paint brush tool = eyedropped tool active temporarily.
+-hold alt and move mouse cursor up or down to increase/decrease brush size on the fly.
+-first after drawing any pixel with paint brush tool, I can then hover my mouse elsewhere on the image, start holding down shift and click - causing a straigth line to be drawn from the first pixel to this new one I just pressed. Very handy when I need to draw straight lines - even diagonal ones!
+
+Generally, Paint Shop Pro 9 by Jasc has amazing amount of tools, features and systems that are probably the best (unofficial) pixel art suite ever made.
+It is the easiest program to learn, boots up really fast, its fluent to use with an excellent user interface, helping me complete any image very quickly and straight-forward. I absolutely love it. 
+
+There are even custom plugins, addons and extras that can be installed for even more cool effects, brushes and more. PSP9 can even handle some adobe photoshop plugins too! It can open and save many image formats, use quick scripts, batch operations (apply a set of actions for multiple images at a time) and other utilities.
+
+Sad thing is that Paint Shop Pro 9 (PSP9) by Jasc was the last good version of the software - so its no longer officially available and newer versions after PSP9 made by greedy Corel Corporation are attrociously horrible garbage. Slower loading times, blurry zoom, anti-alias everywhere, invasive DRM, bloatware nonsense features and otherwise terrible business practices rooted in desperation and obsession with controlling everyone and everything. Avoid avoid avoid, its bad for pixel art.
+
+Another sad thing is that PSP9 may not be compatible with Windows 10 or newer. I'm still using Windows 7 as of writing this where it works flawlessly. Not sure about Linux, but I heard Wine allows it to run good, whatever that is, I have no experience there.
+
+If I ever were to lose PSP9, I'd most likely use Paint.NET, LibreSprite, Asesprite or GraphicGale as a replacement.
+Programs that suck at pixel art are Adobe Photoshop, Gimp, MS Paint. The rest I have no experience with, but there may exist more programs that may be bad or good for pixel art. Some of them may have a lot of default settings where anti-aliasing/smoothing is on that I need to turn off/change to make pixel art possible to draw.
+
+You can grab a portable version of JASC Paint Shop Pro v9.01 here:
+https://drive.google.com/drive/folders/1qe-eqYn2OCpLdZTiGpcrcI_w0EqfYsTX?usp=sharing
+(unzip and run, no installation, might need Windows 7 compatibility mode turned on if using newer Windows, maybe.)
+
+
+==
+
+ACTUALLY DRAWING
+
+--
+
+Blobbing: 
+I use a 128,128,128 RGB grey color via brush/tools to draw the shapes/lines/pixels of the object. Then I proceed to shading.
+
+During shading, I may do corrections to the shapes - add/remove pixels. Often pixel art is a puzzle game where I need to try, fail, try again, eventually succeed.
+
+Tutorials, Guides, Information and Feedback helps massively than just trying to bruteforce it, but practice is required and may take weeks, months before skills reach a level where the amount of mistakes decrease.
+
+The same applies to all other methods below. This is normal, do not expect perfect results immediately and be ok to make a mess often - that's how real learning happens. 
+Do it for fun, play, settle for "just enough" - anything else will kill my motivation.
+
+
+--
+
+Multicolor Blobbing:
+Due to the complexity of the object, I will use multiple different distinct colors via brush/tools to draw sections of the object(s).
+
+These colors can either by just different shades of grey from the standard PSRC grey palette or temporary red/blue/yellow/green/orange/cyan/violet substitutes that will eventually be replaced with the PSRC grey palette shades, bright/neutral/dark corresponding to the lighting or material that part is mainly defined by.
+
+As an example, on smaller objects that still have varied sections/details, like guns, commonly I'd start with 128 RGB grey for the silhouette, then use a darker grey for the grip, stock, scope etc., a lighter grey for external plating/components/addons and then use 0 RGB black for possible exhaust holes and finally white 255 RGB for markings/stripes.
+
+Meanwhile on something as complex as a motorbike, a flower pot or human torso I'd use rainbow colors at first, then replace them gradually with grey sector-by-sector, similar to how the above gun example works.
+
+Once I have enough clarity and confidence with the shapes, details, markings and any other elements of the object, I then re-check that the measurements/dimensions of the object are correct by comparing them to the grid or reference rectangles - calculating the pixels if they're too long or too short and fix/adjust if necessary. I also compare the newly drawn object with the human character sprite reference I set up earlier.
+
+Once this step is done, I should have enough confidence to start shading the object because after this point, making changes to the shape or details will be much more difficult to do, requiring either resetting any shading back to the flat color it once was or risk finicky fixes that may mess up the image even more.
+
+Finally, sector-by-sector, seperately, I can apply shading according to the standard PSRC grey palette.
+
+
+--
+
+Lineart:
+If an object is large or otherwise would benefit from this approach and make it easier for me to draw it, I use outlines.
+
+First I begin with the exterior shell, so that the maximum size of the overall object becomes clear and I also get an understanding for much space I will have within the shell for other details/section inside the bigger object.
+
+Then as the outer shell forms, I use lines to create sections for the inner zones/details. All the while I draw these lines I expect that none of the lines will be visible in the final image, because each section will then be flood filled with the appropriate PSRC grey palette shades depending on the lighting or flood filled temporarily with any color from the rainbow so that it will be easy to comprehend what I'm drawing, as in; what areas will be dark/bright and what section/detail belongs to what zone.
+
+Eventually, the lineart image will become a multicolor blob approach after the initial lineart has helped shape the object and its sections/details clearly enough that the lines are no longer necessary.
+
+Finally - as with multicolor-blobbing - sector-by-sector, seperately, I can apply shading according to the standard PSRC grey palette.
+
+
+==
+
+DRAW - SHADING
+
+Shading:
+PSRC sprites are intended to have a "neutral ambient shading" applied to them, which is meant to make all PSRC drawn objects fit together with one another. 
+
+In theory, the way an object looks like to our eyes is depending on the light source - where its positioned, what intensity it has, what color it has etc. These are things that can dramatically change the shape of something (try this: in a dark room in front of a mirror, use a flashlight to shine a light on your face from above - then try to shine it from below. Notice how different it looks. Realize what it would mean if each object would have different light sources applied to them instead of all following the same standard rule - they would all look really wierd together and not be compatible at all!)
+
+In 2D games, its possible to creating a lighting system that makes parts of a sprite darker or brighter depending on how far it is from a light source. While the PSRC sprites themselves all share the same "neutral ambient shading", even a basic program-run lighting system can create effects of them looking different and cool for different environmental light conditions. This way the standardized neutral ambient shading allows everything to be compatible with one another - yet still benefit from externally applied lighting, because the standard neutral ambient shading itself is so basic and flat that it won't be ruined by a lighting system, but get enhanced by it instead!
+
+Shading itself is both simple and tricky. Its simple because all you need to remember is that the lightsource comes down on an object from the top right corner, but also a bit from the front too.
+
+Any drawn PSRC object always must face the right side >>>.
+Any drawn PSRC object will always be illuminated by a global ambient neutral lightsource coming the top-right-front corner.
+
+The tricky part is that you must learn about shading rules - the best and quickest way to learn it is via Proko's basic shading tutorial on youtube.
+It will explain how to see each object as a 3D geometric shape or sets of multiple 3D geometric shapes.
+It will explain how light behaves, how it bounces, what components of a shadow exist and how to achieve realism with lighting.
+It will explain how to use different shades of a greyscale palette (like the standard PSRC grey palette) correctly for each portion of the shadow.
+It will explain common mistakes that you should avoid to prevent your object looking like shit.
+
+
+--
+
+Shading is somewhat hard to do, because 'light behaviour' and 'rendering objects' is a complex process that requires you to imagine the subject... as if it were a 3D object, something that exists in real life - where you can see it from the side, the front, the top and the back - and even the interior and its inner parts - if needed.
+
+The reference images gathered at the start help with this massively, so study them and use them and get more of them if the current ones are too difficult to get good information on how to proceed next with shading something on the object.
+
+Learning all of this may take some time (days, weeks, months) and plenty of mistakes/failures along the way - which is good; that is how true learning happens. 
+All you need to do is keep adjusting your method and trying until you see how it all works, allowing you to become a good enough at shading. Perfection is not needed, good enough is encouraged and accepted when it comes to shading.
+
+I have included plenty of PSRC-relevant tutorial images and gifs that you can study to get that special bit of information that will help you speed up at becoming better. Try small easy things first, then move on to bigger, more complex objects after - start with a basic coffee cup (7x7px image) and end with a motorcycle. Practice a lot in the middle with different objects of different sizes before reaching the end!
+
+
+--
+
+Trust me, its worth the effort and time you'll invest into it! - once you get good at it, it'll feel pretty awesome how you can produce cool usable art!
+
+Benefits include having a skill that others can respect and pay money for, having better chances at explaining abstract/complex ideas using this art, being able to attract people more effectively to your projects when theres a clear visible cool element to it - helping greatly in pitches, recruitement and promotions!
+
+Persevere and stay determined - you will succeed as long as you keep trying and don't give up!
+
+
+==
+
+DRAW - TEXTURE OVERLAYS (special optional step after shading)
+
+Some material are tricky or tedious to render on over a large area - like wood, leaves, rock, brick, planks, goo, ice... any material with semi-random repeating patterns.
+
+An simple example is a tree or bush object that has a lot of leaves that would be quite time consuming to draw one-by-one. Or a giant wooden crate, where attempting to replicate that classic wood texture would be a lot of repetitive work. In either cases, trying to combine both with the shading the larger object might be a daunting task.
+
+Since PSRC sprites are intended to be mass-produced, with speed and quantity as the main factors to achieve a good-enough level of quality, cases like these would benefit from a method that would allow greatly speeding up work with quality outcomes that are within acceptable standards.
+
+Such a method is texture overlays.
+
+This method is only applied *after* an object has already recieved the standard shading. Texture overlays could be considered as an "addon secondary shading pass" that goes on top of existing basic shading that did the main work of defining the general shape of an object in the first place.
+
+
+--
+
+Basically it works like this:
+
+First seperately create or find a seamlessly repeating texture image of an appropriate size (16x16px or 32x32px - I have packs that will provide both sizes), preferably in greyscale.
+
+Then create a new layer for the image (requires an advanced image editor that supports layers and layer modes, so something like MS Paint won't work here.)
+
+Then using selection tools, be it 'magic wand' or 'selection box/rectangle' or 'lasso tool', select the areas on the image that need the texturing applied to them.
+
+Now that the to-be textured area is selected, use the flood fill tool or paint brush to paint the greyscale texture on that area - on the new layer seperate from the rest of the image. This, again, requires an advanced image editor that can take an existing image and use it instead of a color when painting with the tools. Because the texture is seamless, it will repeat along the entire selected area as a cohesive whole, instead of looking like a bunch of jarring tiles with clear seams that don't look convincing.
+
+After that, play around with the layer settings - namely opacity percentage %, layer modes (overlay, multiply, screen, etc) until it looks somewhat good, where the underlying shading still clearly defines the bigger shape of the objects, while the texture overlay adds the material detail on top of it like a seamless addon.
+
+
+--
+
+Seamlessly repeating textures are generally useful elsewhere too, like terrain, tilemaps and backgrounds, so creating a library of them is a good idea, not just as texture overlays!
+
+Ensure that they follow the common 32 pixels = 1 meter and come in the size of 32x32px square image - or optionally a smaller version of 16x16px for more granular detail.
+Making seamless repeating textures is outside the scope of this guide, but there are plenty of free online tutorials that show how to make them!
+
+
+==
+
+DRAW - COLORS
+
+Coloring:
+Best colors are ones that somewhere in the middle of the RGB 0-255 spectrum, preferably in the RGB 40-210 range. Too bright or too dark colors will look bad, while sligthly desaturated and dark/bright-ish colors are so much better. Unless you're drawing markings or holes, avoid pure white and pure black colors entirely - try to use a very dark grey or a not-too-bright white instead.
+
+Learning about using colors is a very good thing to study - I recommend watching Sycra's youtube video tutorial on colors. They explain things extremely well!
+
+WARNING: An important word of warning - do coloring of your sprites AFTER the greyscale ones have been assembled into ready-to-use sheets! 
+If you make the mistake of coloring them before this step, you may have to manually reorganize them again.
+Always make sure you keep the non-colored greyscale version of all your sprites saved - otherwise making changes or fixes will be far more difficult!!!
+
+
+--
+
+Why draw everything grey?:
+
+Many good reasons!
+
+One main reason is that in digital painting the same image can be duplicated infinitely and recolored and marked in different ways. For video games in particular, this is super useful, as the one object can be repurposed for different factions, teams, companies, groups or manufacturers by simply changing its color and markings.
+
+The other huge reason is that drawing value-based images (greyscale value of RGB 0 to 255) it will ensure that the images drawn will be realistically correct, no matter what lighting, what color or what markings they will appear with. This makes them look cooler and you'll be a professional that makes valuable work (pun not intended)!
+
+Applying color and markings to something is super easy once the shaded greyscale image is ready, the amount of flexiblity this provides for video game use - especially for games that use data driven modular content - is an incredibly big deal. Meanwhile the same greyscale image can be quickly adapted to suit any need without having to drawn an entirely new image of the same object. Once you've drawn it, you never have to draw it again! You can instead focus on drawing thousands of other objects instead - that all work together in the same scene!
+
+If you start drawing directly with color, it is much harder to fix mistakes and recolor an image into something different without ruining the whole image or make it incompatible with anything else you draw.
+
+This is why I always save all my sprites first and foremost as greyscale and keep a copy of them as backup at all times. Never delete the original shaded greyscale sprites; you need them if you want to do more recolors or fixes to shapes/material!!!
+
+The main teacher from whom I learned this whole method was Feng Zhu Design at FZD School. He runs an entire art school, but I learned everything I needed from his free youtube tutorials years ago. I've never met him, he doesn't know me, but his educational work is exceptionally good.
+
+All mentioned sources of learning how to draw, Proko - Sycra - FZD School, are the best free educational content that often can be 500x better than lessons in your local school or university. You can learn from them things within days that would otherwise take you months to learn in an "official" school. Checking them out is recommended, but not necessary if you have read this document fully and the other included materials in this package.
+
+
+==
+
+ORGANIZING AFTER DRAWING:
+
+--
+
+Avoiding critical file type (JPG) mistakes:
+
+Save your progress often and create multiple duplicated as "checkpoints" as you complete new items or phases/major milestones during drawing your sprites. 
+Basically just copy-paste the same image you're working on inside the folder its in OR you can just 'Save-As...' the image you're working on under a new name, like Worksheet1, Worksheet2, etc.
+
+Absolutely AVOID accidentally saving your files as JPG/JPEG or your work can be RUINED. Always make sure your images are saved as PNG. 
+JPG creates rogue pixels - also known as artifacts/compression - which are very difficult to fix afterwards. JPG is basically poison to pixel sprites.
+
+PNG, PNG and always use PNG for best safety. PNG is best format to preserve quality of pixel art and also for online sharing.
+
+
+--
+
+Organizing ready sprites onto sheets/atlases:
+(or just getting from the drawing desk into a more usable form)
+
+Once I have a fully shaded and/or colored versions of the sprite finished (note: its smarter to do coloring after this step!), I will eventually want to use the sprites for something, be it a game, animation, marketing, illustration, media, video or anywhere else. 
+If they're just on the current worksheet, they have the problem of being lumped with a bunch of other unneeded items, while also having a color background that I probably don't want to appear, so I need to organize them in a clean sheet and remove the background color entirely so that its transparent.
+
+I heard that games/computers can process graphics faster if the sprites are packed into a Power-of-two square images - thats 2x2, 4x4, 8x8, 16x16, 32x32, 64x64, 128x128, 256x256, 512x512, 1024x1024 or 2048x2048 pixels tall and wide images - so I will normally create an image of those sizes depending on how many sprites I have and how much I can fit them into a particular size.
+
+Still, I can't just pack them side-by-side all smushed that each object's pixels are touching each other, because that would make seperating them from the atlas images much more difficult. So I have to strike a balance between compactness, readability and ease-of-use.
+
+To do this, I make sure every sprite has a minimum of 4 pixels space between each other.
+I also organize each sprite from largest-to-smallest order from left to right, top to bottom. The sheet will read like a regular book or comic strip.
+I will also make sure that whenever I move sprites to a line below the ones above them is that the tallest sprite above will decide how high the line of sprites below it are allowed to be. Yes, I know that this does lead to some empty space on the sheets, but it makes everything organized and much easier for ASU to unpack them into individual images automatically afterwards in the correct order as they appear on the sheet.
+
+NOTE: Before making an organized sheet, its good to save your current worksheet as final like "Worksheet15final.png", then do "Save As..." as "ObjectNameAtlas.png", so that you'll always have the original backup both as proof you made that work, but also as a backup if something goes wrong and you have to start the organizing part again from start. Anything can happen when people doing work with computers, so please be careful and keep safe copies of any work you do in multiple places - in case one or more of them is suddenly and unexpectedly destroyed.
+
+
+--
+
+'Green-checking' your sheets for unwanted pixels:
+After completing shading your sprites and assembling them onto a sheet, there is a risk of the 'rogue pixels problem'. These might happen by accident while shading an object with whatever tool - and in the process - doing unintended shading on the surrounding background pixels, causing some pixels to be slightly different to the rest of the background. The effect might be almost invisible, very subtle, that I might not notice I've made a mistake until I publish the sprite - causing embarrassment and errors in the image.
+
+To prevent this, I "disinfect" the sheet of rogue pixels *after* I've finished shading and assembling the sheet. The operation is simple; select everything that I consider to be 'background' in the image I'm working on and use the flood fill tool to paint everything with bright neon green color. Neon purple works too.
+
+This will usually reveal the otherwise invisible errors on the image, allowing me to easily find them and then use tools like 'paint brush' or 'flood fill' or 'magic wand' to paint them with more neon green/purple, until everything that is supposed to be transparent/background is now confirmed to be pure neon green/purple only.
+
+From there I can then select the green/purple with magic wand and delete it, creating a perfect error-free transparent background for the image.
+
+
+--
+
+Wait, what the heck is "ASU"?:
+
+Thats a small free open-source program called 'Alferd Spritesheet Unpacker' ('Alferd' is not a typo, by the way). Its a wonderful easy-to-use automatic tool that I can use to cut out individual objects as individual images from a ready-made spritesheet atlas that I made as described above. Its easier for a computer to process one big images compared to many many small ones and it is also easier to share around online. This is why I've chosen to bundle the ASU version 19 program with this package, so that you can use it to unpack large sheets into small individual images, when you really need to.
+
+Credits go to https://github.com/ForkandBeard/Alferd-Spritesheet-Unpacker
+
+I have included an easy-to-follow tutorial guide in ASU's own folder. It will guide you step-by-step on how to use it, so you'll get the hang of it quickly.
+
+Just remember that you first need to manually organize the sheet correctly (as explained above) and make the background transparent. Otherwise it won't work.
+
+
+--
+
+Assembling a multi-component sprite (human, motorbike etc.):
+
+Some objects are available in multiple seperate components that need to be put together - like the human being, where the torso, limbs and head are all seperate.
+The reason for why some objects - like the human - are in pieces is twofold: flexibility to pose the character to any position and to reduce the amount of extra work to absolute minimum. Modular sprites have the benefit over regular frame-by-frame sprites for being easier to draw, easier to reuse, easier to modify and support physics ragdoll type of characters. With traditional frame-by-frame animation, all of these aspects are much harder and they're far less flexible. Cool thing with modular sprites is that they can assembled into frame-by-frame animation sprites too.
+
+The downside of modular sprites is that it requires assembly, either manually in an image editor or specialized sprite editor or automatically in a game engine through programming.
+
+For the manual option, if you want to make frame-by-frame sprites of multi-component objects - like the human - for purposes of game engines that don't support ragdolls or as illustrations in media or marketing, you can use a suitable program to help with this task. Heres the ones I've heard of:
+
+Spriter
+Cutout Animation Tools (Blender)
+Creature
+Synfig Studio
+CrazyTalk Animator
+Spine
+Animation Paper
+PowToon
+Animata
+Toon Boom Animation
+Anime Studio Debut
+Antics 2-D Animation
+Express Animator
+
+These are dedicated 2D sprite animation programs, but technically you can also assemble the pieces of a sprite inside Paint Shop Pro 9, Paint.NET, Asesprite, Photoshop or any other image editing software that has layers and that hopefully does not smudge sprites with anti-aliasing when the pieces are rotated.
+
+Using search engine keywords like "sprite posing tool" or "sprite animation tool" can help you find better programs too.
+
+See the "layering a human.txt" for information on which component should be infrong or behind the torso.
+
+
+--
+
+As an artist, you do not have to be perfect or even do things exactly like my sprites are - shading wise. "Good enough" *is* good enough.
+
+The important thing about PSRC is that all sprites should be usable in the same scene, even if their shading style is different.
+
+The whole point of the PSRC system is that different people with different sprites can follow certain standards and create their sprites within specific frames/limits/rules, where as long as they adhere to these rules they can express their own style and creativity within that space.
+
+This allows for different authors to make different packs of existing or new objects with their unique style, but still be compatible with any other PSRC author's work out there, so that everyone can use everyone's sprites for their scenes. That's the main reason and benefit of this entire system.
+
+Overall, PSRC system is a like collaborative platform where different authors can contribute their sprites to a common pool / a common library where any added sprite will more or less work with the existing content - even if it differs in style or quality to some extent.
+
+People can then tap into this massive, ever growing pool of compatible sprites and use it in their 2D projects. No matter what they're trying to depict its all covered by the PSRC sprite library. To make the bar of entry as low as possible, newly entering artists can rest easy that their content will work with everything else as long as they follow some basic rules that makes this whole system work:
+
+
+--
+
+The PSRC standardization rules are:
+Measurements must be correct, 1 meter is 32 pixels. Slight exagerration/cartoonification is ok for getting in detail that otherwise would be impossible to fit within the limited pixel space.
+Draw in greyscale. Use colors only to figure out how to draw the shape, but do actual coloring *only* after greyscale is done.
+Coloring is done via New Layer -> Draw Color -> Set Layer to Overlay Mode. Any variation/remix of this particular method is ok, but original greyscale must be available and provided always. Never delete the greyscales.
+Lightsource is always an ambient top-right-front. No spotlights, no other light directions.
+Strict flat Side-view or Front-view perspectives only. No 2.5D, no isometric, no fisheye-lens.
+No top-down, unless its a space craft and even then it any elements/details/addons/object on top of it must be side-view or front-view.
+Think of any drawn object in the context of how a standard 2D PSRC human character would interact with it - helps with making it gameplay valid.
+
+
+Thats all, shading/rendering style, proportions, coloring and such are anything you want them to be. You don't even have to follow the exact official PSRC greyscale palette, as long as the objects are drawn in greyscale in general. There are no color limits or such. As long as the above rules are met, anything else is free game.
+
+
+--
+
+Critical Human/clothing note:
+
+The Human Character is a very special case in PSRC - everything else is built off of it. Everything is measured for it. 
+Every object should consider how it would interact with the human character in a scene where they're both present.
+
+I strongly suggest against making your own version of a Human Character, mainly due to clothing and skeleton compatibility. If you have even a slightly different shape, any existing clothing, hair, accessories and other equipment will be unusable for this new human.
+
+Same with new human character limbs, if you want to make new versions - say robot/prosthetic/mutant arms or legs - they must be within the same or thinner silhouette as the original limbs are, otherwise the massive library of clothes will not work.
+
+This is why I've provided clothing templates in the info sheet with this human character. They're specifically designed for this human character in particular.
+Other body types or sizes will require their own clothing templates. Those are be included with Advanced Human Character packs that provide the remaining optimized body types.
+
+Anything attached to a human character must not extend beyond X* amount of pixels from the sprite's borders in any direction (up,down,left,right).
+*X is 4 pixels if its a foreground addon (ie. pants) or 16 pixels if its background addon (ie. hairstyle). This is further explained in the clothing starter pack's information documents of why its like this.
+
+
+==
+
+And thats it.
+
+My email is reactorcoregames@gmail.com, if you have questions. 
+
+Depending on how busy I am, my reply might take a bit long to do, so please don't expect instant messaging from me - I'm a one person developer.
+  

@@ -1,0 +1,21 @@
+Sprite Sheet Packer
+https://github.com/nickgravelyn/SpriteSheetPacker
+
+--
+
+Quotes from the github page:
+
+"Sprite Sheet Packer is a fully featured tool for combining multiple individual images into a single, efficiently laid out image."
+
+"Sprite Sheet Packer supports reading PNG, JPG, BMP, and GIF images and produces a single PNG image with all the images embedded inside of it. The resulting image is transparent anywhere an image is not drawn. The tool also produces an accompanying file that maps the image file names with their rectangles, for use in your program to find the regions of the image you are interested in."
+
+--
+
+Reactorcore:
+If for whatever reason you instead have many individual images that you want all automatically glued to a single sheet, then this program helps you do that.
+I felt it'd be nice to include this too since I already have Alferd Spritesheet Unpacker included.
+
+Though keep in mind, while the program will cram the images as efficiently as possible, you won't really get to control how they're ordered on it per se.
+It can speed up work by giving a faster starting point than having to manually glue each images to the a bigger sheet one-by-one, but if you want to organize it you'll still need to do that manually.
+
+Then again, it might not be a problem. This program does indeed optionally also produce a txt file that you can help a program automatically identify where each sprite is on the newly generated sheet. I have no idea how to do that, but hey I'm certain programmers may find that function useful!

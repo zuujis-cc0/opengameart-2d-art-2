@@ -1,0 +1,18 @@
+# Where to look for reference images for PSRC sprites
+
+Search engines:
+- write things like "side view [object_name]", i.e. "side view hunting crossbow". "top down" and "front view" are also useful.
+- write things like "[object name] catalog". Other words besides "catalog" could be "reference, reference sheet, gallery, spritesheet, list, etc."
+- or just write [object name]
+
+Image galleries:
+- DeviantArt, Pinterest, Pixiv, Artstation, CGSociety, Newgrounds, Pixilart, Lospec, theres many to find per each topic.
+
+AI images:
+- AI images usually have logical errors in images, so they may be relatively unreliable for mechanical designs, but could still work as great source for reference images for organic things, especially alien ones, unusual objects or close approximations of real things that you'll fix any issues while driving it as pixel art.
+- In the prompt, you can write "flat white background, side view image, reference, sample, professional lighting, product showcase photo". Something akin to that so you'll get a clean image that'll be easier to parse.
+
+Photos / Magazines / Catalogues
+- Fun fact: The entire PSRC Builder Hardware pack was completely based of the images from a physical product catalog from a local contruction tools company called Biltema. Each product had a small image against a white background that made it easy to see all the details that mattered. I had the advertisement catalog in front of me in real life while I was drawing them as sprites on the computer.
+
+Ultimately, you may find images, sketches or references anywhere both on the internet and in real life. Whatever you need to find, there will probably be enough pictures for you to use in some way.

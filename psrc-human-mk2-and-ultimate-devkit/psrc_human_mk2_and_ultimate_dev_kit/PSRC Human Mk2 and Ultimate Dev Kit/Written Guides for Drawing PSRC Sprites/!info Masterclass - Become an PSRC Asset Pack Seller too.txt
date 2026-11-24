@@ -1,0 +1,590 @@
+# Ultimate Masterclass to becoming a successful Pixel Sprites ala Reactorcore (PSRC) seller and marketer
+
+==
+
+SUMMARY
+
+
+--
+
+Once you've made pixel art sprite packs yourself, you can possibly sell them and earn money!
+The purpose of this document is to make you into a pro at publishing, presenting and marketing your sprite packs. Best part is that all of this is introvert-friendly and it shows a way of marketing sprite packs (and other digital goods) that doesn't feel sleazy awful or forced.
+
+This doc will explain the complete process how to do EVERY step in meticulous detail, so you will be guided every step of the way.
+
+==
+
+USE, SHARE, RELEASE, SELL:
+
+--
+
+You can make money in a variety of ways with the sprites you create;
+
+Create asset packs that sell automatically on a digital asset store.
+
+Create commissioned custom sprites to paying customers.
+
+Be hired and paid by a company/employer that would be happy to use the exact style of sprites you're able to produce.
+
+Create custom collage artworks using the PSRC sprites (self-created or bought from other creators) and sell them via an online selling platform, like Ko-fi, Patreon, Only Fans (they can be used for more than just porn) and so on.
+
+If you're making a commercial 2D sideview game, the PSRC sprites will cover all your art needs - less things to worry about and just focus on the programming & design.
+
+Run a service where you perpetually create new [variable amount of] PSRC objects a month and allow people to download them if they pay you X money each month - basically on Patreon or similar.
+
+Do what Kenney.nl does and release new PSRC content as you do for free for anyone to download, but have a supporting patreon/donation fund that gives some kind of bonus to anyone who decides to pay/subscribe to support you monetarily.
+
+Theres probably more, so explore and find new ways to make it work out for everyone - yourself included.
+
+
+--
+
+Besides selling, you can also use any art you create for education, activism, marketing, promotional and influencing purposes.
+Whatever your message is, its much more effective when its communicated alongside a visual element, such as the art you make.
+
+Use the extensive library of PSRC assets made by me, you and anyone else to create scenes where you bring human characters with poses and clothing (or naked, why not) surrounded by objects, backgrounds and visual effects - whatever you want and can achieve with the image editor of your choosing.
+
+Start an art gallery, a blog that is backed by PSRC art or even make animations with PSRC sprites!
+
+Review products/services, talk about your favorite things/hobbies and help people learn something valuable.
+
+
+--
+
+You can also make sprites as a form of relaxation if you just enjoy the act of drawing / assembling scenes. r/pixelart or Pixeljoint forums on the internet are few of such places that celebrate this online. Theres probably a bunch of Discords where various artists simply draw for fun too.
+
+
+==
+
+
+MARKETING - PART 1 - HOW IT WORKS
+
+If you want to make money or spread your message/education, you'll need a way to reach the correct people that would potentially want to buy/see your stuff.
+Thankfully, it doesn't have to feel awful/sleaze/forced and you don't have to even show your own face or voice while doing so. Let the art you create be the star itself.
+
+If you want advanced information on how marketing works and how to do it so that you don't hate yourself and that others won't hate you for doing it, a style of marketing that is more effective and feels/is more natural, check out www.marketingforhippies.com or Tad Hargrave's youtube channel. 
+
+I learned everything what I needed from his free materials, but he has deeper/personal services if you're needing that sort of thing.
+The most important point was "niche" or "niching" - aka "NEVER push your product/service where its not specifically wanted. ALWAYS respect the people as good human beings and ONLY focus your efforts in the communities/groups/individuals/places that already WANT what you have to offer".
+
+Its not easy, it requires creativity - especially in the beginning when you try to figure out where to market your stuff and how - and it requires effort, intelligence, perseverance and determination. You need to do it over a long period of time, not just a short single burst. You need to plan and think before you start blasting or you'll quickly run out of steam. You need to start marketing early and continue it long after you've finished drawing your stuff and released it for sale.
+
+Marketing is a big subject and worth exploring - especially to avoid costly mistakes money and face wise, but I can summarize a basic outline of what you can do to sell your PSRC style sprite pack online.
+
+
+--
+
+The first most important thing to realize is that pixel art is easy to just grab off the screen if its shared online as a PNG image by simply 'right click > save as...'.
+If you don't want people to just literally take your hard work without paying, you need to be careful in how you show your sprites.
+
+At the same time, you still need to be able to show your sprites to people to let them know what you're offering them so they feel safe and confident to invest their precious money on your product. Its a two-way street. While you need respect from others to value your work, you also need to respect others to value their time, humanity, safety - to know that they're in safe hands when they deal with you. 
+
+Otherwise they won't know what they're buying from you - and thus feel less willing to part with their money. You need to find solutions where both sides will get what they want - you get paid, they get good stuff and they'll know in advance that the stuff they'll be getting is infact good.
+
+
+--
+
+What you can do is make a copy of the sprites and do certain actions to "ruin" the image - making it unusable as sprites, but still presentable to a buyer to let them know what you're selling. 
+
+These methods include:
+
+Rotating the image between 1-89 degrees. Pixel art can only tolerate 90' degree rotations. 
+Anything below or above that will devastate it and make it unrecoverable by any attempt to rotate it back.
+
+Scaled up by 200% or 300% plus then scaled down by 96% right after (assuming its resized with 'pixel resize' setting). This creates elongated horizontal/vertical streaks in the image that extend random parts of the image with longer pixels. They're almost unnoticable, but somewhat frustrating/annoying to clean up. Not effective on its own due to its minimal effect, but when combined with other methods its a good addon.
+
+Scaled to 200% or 300% using a resize method that attempts to soften the image ('smart resize, bicubic, bilinear' etc.) attempting to zoom in on this image reveal blur. Trying to resize it back is not possible. This method isn't so great because even the zoomed out marketing image is noticably blurry - it looks bad enough to turn away paying customers.
+
+Creating a new layer and applying a 20-50% opacity pattern flood fill over the entire image. Original objects are visible but distorted with unwanted pixels from the overlay pattern that someone can't just steal them without having to do a lot of work to recover it.
+
+Saving the marketing image in JPG format - with 90% or even 80% quality setting - makes it so dirty that attempting to recover it is too much work.
+
+I usually do the '50% opacity texture overlay', 'resize up then down a little', 'save as 85% jpg' all combined. Works well enough for me.
+
+
+--
+
+That said, the intention here is just to increase the hassle for non-paying customers without harming the experience of paying customers. Regardless if I'm an asshole or not, my work will be pirated one way or another, its inevitable. The difference if I'm not an asshole to my customers and do my absolute best to serve and respect them well, they'll have less reason to pirate my stuff - especially when they *do* have the money. Those that pirate because they can't afford it is not lost money for me - I'm selling a digital product; something that can be replicated/copied infinitely - its not damaging to me.
+
+On top of that, those that pirate due to lack of purchasing power can be a great force in uplifting themselves out of poverty by getting this pack and learning how to make sprites themselves - and selling them online just like I do. As long as all sprites are intercompatible, everyone will benefit. I might even get more popularity too, which will increase sales with pirates advertising me unintentionally to their friends, whom may have the ability to buy my products - unlike the pirate themselves.
+
+
+--
+
+Speaking of serving the customer, the packages I or you sell need to contain value to the customer. This includes the sprites themselves on a clean sheet, but also additional materials that would greatly enhance the customer's ability to use the sprites more easily for their game or media projects.
+
+In the case of PSRC, I include the actual spritesheet with its transparent background, then I include an infosheet that displays all included sprites (greyscale only) on a single big image + some extra standardization info (32px=1m, Human is 60px tall, a picture of an assembled human etc.) included on it.
+
+I may also include atleast one (1) colored version of the spritesheet on a transparent background - ready to use, same as the greyscale one.
+
+And finally, I'll include a txt file that instructs the user to also get the Human Mk2 Character pack, which will include ASU, allowing the user to split the sheets into individual images if they need them that way. This text file may also include links to my store, my patreon, Ko-Fi or whatever I may have.
+
+This all should be included with each PSRC package every time.
+
+
+--
+
+The amount of sprites to justify a price of a package depends on the size of objects, complexity of objects (aka "how hard/time consuming was it for you to draw them") vs how much space they take on a power-of-2 sized sheet. I personally feel confident in charging between 10€ to 40€ for two 256x256px sheets that are filled up with objects/sprites, knowing that I'm also selling many other packs and that other sellers may be offering similar price points on the market for their sprites. 
+
+My strategy is to sell many packs at a lower price and let the amount sales make my business successful, instead of selling to a few people at a high price per package.
+This is why the mass production aspect of PSRC is so important, otherwise this would not be possible. That said, you can do what works for you the best.
+
+You can small even smaller mini spritesheets at even lower prices like 2-4€ per one or two 128x128px sheets or even 64x64px sheets. Or just charge ten times that amount for your sprites because you specialize in create specific objects that no one else is selling. Some sellers may try to out-do you by offering the customer a better deal, so you need to evaluate at all times whats the best strategy for you to try doing to survive on the market.
+
+
+--
+
+Previously, I used to include individual sprites with the packs, but it slowed down extraction and opening speed in the folders, as well as slow down things like disk defrag, virus scans and folder searches due to many small individual image files clogging up the speed of these operations. So its better to just have the sheet and ASU included (with the guide document) so the user can choose if they want individual images or is the spritesheet enough for their purposes.
+
+Also if I made multiple colored versions of a sheet in a sprite pack (like is the case with the human mk2 pack), it would multiply the amount of said small individual images massively - causing even worse slow downs for the computer.
+
+It may not seem like a huge problem with only a few packages, but the problem become quite large and noticable when more and more packages are made, released, downloaded and combined. Its a problem that can quickly get out of hand in the future, so I want to think ahead today to prevent from painting myself into a corner tomorrow.
+
+
+--
+
+So now I have a solid valuable package to sell, all in a neat zip file ready to be uploaded into a store. Next I need to create the marketing images.
+
+Its not enough to just have "ruined" versions of the spritesheet or the info sheet uploaded as the marketing image because it doesn't communicate the full details whats so awesome about the sprites, the PSRC format/style/design or look professional enough for a customer to feel fully safe when buying the pack. 
+
+The best solution is when you have an image that combines the "ruined" version of a spritesheet besides or behind a sharp clean wrapper with full-quality text that has not been damaged/ruined by the jpg compression. Meanwhile behind the spritesheet - assuming it still has a transparent background - I'd add a soft color gradient or pattern background that looks nice - or even just a flat single color, but whatever I add, it must not steal the show from the sprites themselves on the image.
+
+I personally like to highlight the different features of PSRC packs as a quick bulletpoint list:
+Standardized Style & Consistent Scale
+Flexible & Reusable
+Easily Customizable
+Optimized for Game Design
+Zoomable up to 600%
+Lightweight & Efficient
+Greyscale and Colored Versions
+Huge Growing Library
+Can be used for Commercial Projects
+The 2D equivalent of 3D model templates
+ 
+Each point lets the potential buyer see and know how they could use these sprites and gives them an understanding of this format's capabilities. It becomes more appealing to buy the package when they have this information vs when they don't. Its also compact, quick to read and easy to grasp. 
+
+Unlike this advanced guide document you're reading right now that requires a person to be already invested to persevere reading all this information, in a sales situation its important to keep things as simple and short as possible, hence the bulletpoint feature list. First offer them a quick and easy info blurb, then provide them the advanced information if they require it - and ONLY if they want it - never force it upon them.
+
+
+--
+
+Depending on the store, they each might have their own required marketing key images they I need to provide. Sometimes it has to be an exact size (like 900x400 pixels, or something else arbitrary) and sometimes I can upload any image as long as its large enough. They might require a total of atleast 4 images:
+An icon image (tiny)
+A thumbnail image (small)
+A product page image (large/medium)
+A screenshot or two of the actual product (large - usually just the "ruined" spritesheet enlarged to 200% or 300% in size.)
+
+A great way to evaluate if you did everything correctly is just try to be in the customer's shoes when they arrive at your store;
+Would you feel safe in buying your own product based only on the information and images provided on the sales page, without any insider information beforehand?
+
+Something to think about. Empathy is important in making a sustainable long-term business become successful. Both in terms of how a package is provided and how its marketed to people.
+
+
+--
+
+MARKETING - PART 2 - SPREADING OUT
+
+
+Actual marketing (introvert friendly and enjoyable edition):
+
+Ok, so most of the above is only for the actual store where you sell your sprites.
+
+The other big part is 'off-store marketing efforts' - as in 'doing marketing outside of the store itself, with the intent for customers to eventually find your store' by doing various marketing actions in various locations, be it forums, social media platforms, image boards, communities, groups, chat groups and anywhere else where you could possibly advertise your product. 
+
+This will let people know you exist to begin with, that you are an active business/seller/professional (being more recent increases safety in customers to buy from you), that you create pixel art for game and/or media use, that you have a store where people can get cool stuff from you (for a price), that you're not fake/scammer and that you care for the stuff you do - therefore can be trusted to buy from.
+
+It doesn't require showing your face or voice, you don't have to beg, coerse or force anyone and its even enjoyable and feels natural as an activity. Often times it doesn't even look like you're selling anything. Its a far cry from the crappy sleazy marketing garbage we all have been exposed to.
+
+However, it does require special attention and can easily be messed up - turning your marketing useless or even damaging if you're not careful.
+
+
+--
+
+In a nutshell, you simply use the sprites you've made to make a stockpile of zoomed-in images, usually 1-5 objects at a time (depends on size and complexity), usually on their own against a gradient color, flat color or textured background. Also apply mild/subtle "ruining" (JPG 85% quality, resize up and down, texture overlay, maybe rotate, etc.) to prevent direct stealing/copying.
+
+You then amass about 10 to 50 (or more) of these seemingly basic-ish images and go out on the internet to hunt down "suitable places" to post these objects to.
+
+"Suitable places" is usually an online community where people go to post stuff, discuss it, rate it, view similar things - a place that accepts submissions by strangers, like forums, subreddits, social media groups, image boards, message boards and anything else similar like that. Its also a place where random people go to view said submissions. Places that share information.
+
+However, "Suitable places" also means that said forums, subreddit etc strongly *wants* to see the image you'd be posting there. You need to find the correct niche for your specific product. If you post anywhere else, people will burn you alive and spit on your grave - metaphorically speaking. More commonly, marketing your stuff in the wrong place will make people ridicule you, delete your posts, ban you, leave horrible ratings, troll you or worst of all - ignore you.
+
+That is the most important bit why most marketing fails.
+
+Niching is everything. 
+
+Find the correct niche for your specific product.
+
+The way I do this is I look at what I'm selling. Its a spritepack primarily for game development use. As such...
+
+My Primary target audience are 2D sideview pixel sprite art game developers. 
+My Secondary target audience is anyone that may make illustrations, sprite comics, sprite-based animation videos, marketing posters/banners etc, educational images or artists that create unique artwork by kitbashing existing art - like pixel sprites - into various new configurations.
+
+
+--
+
+As a result, primarily I'd want to go to the web and find websites related to gamedev, pixel art, game sprites, game asset stores, digital art stores, game art repositories - likely places where I could guess a person that is seeking for the thing I'm selling could possibly go to - out their own free will and genuine curiosity.
+
+Places like tigsource forums, gamedev.net, cubebrush, gamedevmarket, unity forums, unity asset store, yoyogames forums, yoyogames marketplace, scirra marketplace, envato's graphic river, subreddits like r/pixelart, r/gamedev, r/gameassets, opengameart.org, spriters-resource.com... and many more that I might find on the web that are relevant.
+
+Secondarily, I'd look search the web in a similar way to find places where my secondary target audiences might be visiting and would be delighted to find the products I've got on offer.
+
+
+--
+
+However, these two above sectors have a problem. Usually its the people that already know about these places are the ones that will visit them, but those that don't know them will miss my marketing entirely. There may also be the issue of those places have more sellers browsing these places, rather than developers/buyers - leading to an atmosphere that might occasionally feel a bit tense, expectation-loaded, too professional, somewhat uncomfortable because its a non-relaxed space full of advertisements and people that want money from you.
+
+Posting in the places is still important because they're like an "official catalog" where I *can* actually post a legitimate advertisements and ask people to buy things from me, thus now atleast appearing in the listings so those that are looking for resources through these places *can* actually find me and my store through there.
+
+But again, its only going to reach those that willingly browse these areas, so its only 50% effective to only do marketing there.
+
+I actually barely visit the above two target sectors myself - only going there if I'm looking anything business related when I specifically need to - a very narrow window of opportunity for anyone trying to sell me anything. Very temporary and fleeting chance.
+
+I need something more to support these sectors - something outside the box. Something... spontaneous and unexpected.
+
+As a developer myself, I often find browsing things that I find exciting or interesting in a relaxed setting where there is no expectation of anyone selling me anything. A hobby community, an endless feed of a subreddit dedicated to something cool... somewhere where I can relax and procrastinate, discover new unexpecting things that stimulate my mind and imagination, places that increase my knowledge or view of the world around me of what is possible to achieve. Casual nice places that improve my life in small ways, preferably for free.
+
+If I'm doing going to those place and I'm a developer... theres a chance other developers who might want to buy or try the stuff I have, but otherwise avoid/barely visit going to marketplaces for reasons described above. So if I target those space, I can increase my marketing from 50% to up to 100% effectiveness.
+
+
+--
+
+Achieving this "missing" +50% marketing effectiveness requires some creativity and logic.
+
+I look at the actual individual package I'm selling - what does it contain, what theme/subject/topic does it touch on, what applications do *these* specific items have potential for?
+
+Lets say I'm making a pack of firearms, guns, military armaments - who'd be enthusiastic about such things? What communities love this particular type of stuff?
+r/PixelGuns sure does. r/ImaginaryWeaponry might like it too. Airsoft forums/discords might too. Gun enthusiast message boards, Any sort of weapon-related image boards.
+
+All these are worthy targets to post my image. I never know if a game dev or media creator who might want what I'm offering happen to browse these places - as they would naturally due to their inherent interests, hobbies, fandom etc. Or maybe someone who has a friend who might know of something that would love what I'm offering happens to see my posts.
+
+The majority of people that will see my images will most likely simply leave a like, tell me to post more for their own entertainment or otherwise leave a positive comment on the image I posted. They won't necessary ever buy it, but either they might recommend it to someone they know needs this stuff or share it forwards into their own circles and other communities that I might not know of, where a potential buyer might actually happen to be at.
+
+
+--
+
+Posting these indirect-marketing images is not so straight-forward though. I have to do it correctly and carefully - tailored to each place individually.
+The places I post my image to must make sense or have some connection or theme or other crystal-clear element that resonates with them specifically. 
+Never do a post unless this part checks out. Never post a wrong picture into a wrong group. Bad publicity is short-lived and unsustainable.
+
+Shotgun approaches will not work, mass advertisement will not work, desperate "please buy my stuff" or "you HAVE TO buy my stuff" will not work.
+
+People have become allergic or numb to traditional marketing that even the smallest hint of someone trying to sell or get them to do something will activate their defences and trigger their anger. Its a very valid reaction to something that has been overabused and often done with selfish intent, only viewing the customer as a mere wallet/milk udder/a piece of meat, instead of a real human being. The fundamental lack of respect from previous bad marketers has made people jaded and cautious.
+
+When I want to post something somewhere that isn't a direct marketing channel - i.e a place where people expect to see no ads by default, only the content of interest they *specifically* came there for - I do my best to avoid logos, brands, calls to action (stuff like "download here", "available today", "visit my website", "buy this", "get it now" etc) or even titles of my product. Any of these things can be easily seen as an attempt to promote something, triggering defences and pushback very quickly.
+
+This should be my internal intent when I post these non-direct marketing posts:
+
+Do *not* do them as 'marketing post', but as 'celebration post' instead - where your inward energy and thoughts come from a place of enthusiasm like you're showing something you care about to your best friend - as in "hey I think this thing I made is cool and I wanted to share it with you, I hope any of you people in this community might accept it and like it as much as I do!"
+
+Like sure, technically yes I am doing it to market my product - but if I go in with that attitude into a community that doesn't want to be marketed at and they're only there because they intrinsically enjoy sharing cool/interesting things with each others, its not gonna work. 
+
+What I'm trying to say here is I try to mentally let go of my role as a marketer and approach their community with the intent to engage in their hobby - sort of.
+
+I don't have to be interested in their hobby per se and I don't have to pretend to love what they're doing over there, but I go there to post my image like it was another submission among the ones they have - atleast topic wise. Its half-stealth marketing, but also half-genuine by the virtue of me just following their rules and desires.
+
+
+--
+
+Every single "suitable place" that I may find will have its own rules that I must follow. Usually these rules are written clearly and plainly somewhere visible, which will tell me what I should do and what I should avoid. Failing to follow these rules will result in deleted posts, bans, ridicule and so on - its bad for business. I must not poison the water reservoir I intend to drink from myself. Respect people, serve them with love and they will reciprocate in kind.
+
+The rules will decide how I should write the title of my post and what images/objects/styles are allowed and in what format.
+
+At the same time, I also have my own desires on how I want to write titles and how do I post my images - to improve the effectiveness of my marketing.
+
+I need to address both my needs and their needs - find a solution that will work for both sides.
+
+I want my posts to have a clue that would allow an interested person to find my store by browsing my profile page or by having them google/websearch a specific phrase that a search engine would easily provide a link in the first page of search results.
+
+I can achieve this effect in two ways.
+
+Lets say I have a gun sprite - just a single gun that has been enlarged/zoomed in and put on a simple gradient color background as a JPG - I'd post that image on r/pixelguns with the title "PSRC [weapon name]" - as in "PSRC Reflex Revolver".
+
+The other method is to have a subtle tiny little text written somewhere on the enlarged image itself that reads "PSRC [Author Name]" - as in "PSRC Reactorcore".
+
+I can combine and do both, but there may be some instances where I should only do one or the other. In the event I can't do either, atleast I should be able to put a link to my store on my own profile page - and if links aren't allowed, then just write "google 'PSRC Reactorcore' for more of my sprites". Or a social media account - if they allow those - like "check out my twitter, blog, forum, discord, whatever" etc.
+
+Rule of thumb: the more stricter rules, the more careful I need to be - meaning no text on images, no product/brand names in title, no author names - only the picture itself is allowed. If people like the picture where I posted it and it was accepted there fine, the viewers of that community might later visit my profile page where I *will* have my links, brand names and so on, which is now acceptable, because that page is mine and they came there from their own free will and curiosity. There it is fair game.
+
+
+--
+
+A little mercy against all this harshness though.
+
+There may be moments where I might not be fully certain if a picture I want to post will be suitable enough.
+
+Maybe the existing posts by other people in that community are using a different style, like paintings, lineart, sketches, 3D models or concept art instead of pixel art. There may be some hesitation of "should I post this here", even if the place does not specifically ban pixel art or have any rules that the specify what forms of art are allowed or not.
+
+Maybe the particular subjects posted by other people in that community might have a specific trait that my pictures perhaps might not fully fulfill - even if there is no mentioned about it in the rules or the description of that community that would ban/remove me if I were to post that item in there.
+
+The problem is I cannot know in advance if it will work or not, I cannot read minds of people and I cannot see the future.
+
+Maybe they'll dislike my pixel art images or maybe they'll love it as a breath of fresh air and new variety that wasn't there before.
+
+Point is, I don't be perfect or 100% sure when posting an image - as long as I do it respectfully, follow the rules and don't attempt to force marketing or advertisement on anyone - with my primary intent being to entertain people with the cool images I post, where the marketing that indirectly happens through it is only as a bonus that I cannot force, I cannot control and I cannot predict.
+
+If I end up getting banned or my stuff removed by the moderators, owners or staff - then I know that was the wrong place. Lesson learned, ok, move on to the next area, maybe they'll like it instead. Eventually someone will appreciate my work - but this will only happen as long as I keep going and don't give up if one community rejects me.
+
+If I do pass, then I keep on posting in that place, respond to comments, monitor the amount of views/likes - but not too closely as a measure of success. The most important part is that I got my foot in the door. I'm in and I'm (tangentially) accepted into the community and are allowed to continue posting more in there. Its one new marketing outlet that I can now add to my list and visit to post more stuff in the future.
+
+
+==
+
+MARKETING CHRONOLOGY:
+
+Marketing does not work if I try to do it all at once, in one big burst. Bad idea.
+
+I need to space it out over a long period of time, like a constant but slow drip of water droplets. Persistent, on-going, continued.
+
+The reason a single-burst marketing is bad is because I might be on vacation, at work or elsewhere when the burst happens and I'll miss it entirely. If you wanted me to see an advertisement, you'd have to perfectly time it when I was present, awake and paying attention. Life is more than just browsing the internet. Life also spans a long time. People do other stuff in their lives than await for me or you to post an announcement about a "cool thing" either of us just made. No one has a clue, no one expects it, no one cares by default. 
+
+To expect the success of my product/service to magically happen on its own after I published it on my website/store/whatever is stupid, lazy and selfish. The world does not revolve around me, no one knows me by default and certainly no one has any reason to support me if I don't make a good case for it. There are also millions of other people trying to compete for the attention of potential customers with their own projects/products/services, so I don't exist in a vacuum either.
+
+Thankfully, most authors have no idea how to do marketing correctly, some outright shy away from it while others make mistakes that sabotage their own success. 
+
+In the end, the amount of truly competent competitors is only in the range of a few 10s, 100s or 1000s. Not where near millions. 
+
+And even those few competitors maybe focusing on something that doesn't directly conflict with whatever I'm making, allowing both of us to exist and succeed in parallel to each other. Some of us can even work together either by collaboration or by cooperation and improve both of our successes.
+
+
+--
+
+Building a sprite pack is only half the journey. Marketing it is the other half.
+
+Marketing is *critically vital* to financial success and popularity.
+
+Well done marketing is something that is supposed tp be done over the entire lifespan of a product. 
+
+Marketing starts as early in the project as I have anything visual to show off, marketing builds up hype/interest/curiosity towards the release of my package, marketing keep creating new hype towards updates (if any) and marketing continues on way long after the product has been completed, only stopping when its no longer useful. 
+
+Because PSRC sprites are perpetually useful due to their design, their marketing can also be perpetual. I can keep earning money from these products even years after I've released them on my store - but only if I keep marketing them, otherwise they will be forgotten/lost/unseen if I do not keep making marketing efforts.
+
+The beautiful part is that once the hard work of making a pack is complete, only an occasional easy set of actions once-a-while is enough to keep it alive and making money potentially forever with fairly minimal effort required.
+
+Never stop marketing, do it early, do it regularly - but do it sparsely and staggered.
+
+
+--
+
+When it comes to timing, I need to post an image every X amount of days/weeks/months based on where it is during development.
+If I just started and only completed a few shaded sprites, I can only post one image - per community - once a month or two month or three month.
+If I'm past the halfway point of completing the pack, I should attempt create atleast 12 total different simple images I can use for marketing, posted once a month, per community.
+If I'm getting close to finishing and releasing the package, I should market more often, like 2-4 times a month - requiring atleast 24-48 different images to do so.
+If I'm less than a month away from releasing my package, I can market 3 times a week - ever other day.
+If I've finally released the package on my store, the I will gradually go back to posting only 1 image per month per community.
+
+Most importantly, do *not* post that 1 image to every community on the same day. Ideally, I go down the list of "suitable places" and only do 1 post every 2 days.
+
+As a routine, it becomes as easy as checking my email inbox and requires such minimal effort that I can do it alongside drawing sprites like a quick chore. Because I stagger the posts to every other day, I end up creating a continuous presence of my project on the internet. If someone on the net is only browsing one community on my list, then to them it will look like I posted 1 image per month and will not be bothered by it, when in reality I may have posted 15 times the same one image during that month.
+
+The main idea is to post regularly in a rotating cycle clearing out the list I compiled for this specific PSRC sprite package, changing the marketing image posted atleast once a month. I want it to be such a tiny and easy action to do that doing it is a no-brainer. For a solo developer both energy and motivation wise this aspect of ease is important, otherwise I won't do it.
+
+
+--
+
+So previously I analysed a PSRC sprite package I made, understood what themes it suits best and what its target audiences are, searched the web for "suitable places" and found some good candidates where I could do marketing efforts. Great!
+
+Now I need to create a rather simple document.
+
+I make categories based on type of marketing image I've created, be it: 
+A single object on its own, on a simple background.
+A group of objects on their own, on a simple background.
+An assembled scene that features object(s) from the pack.
+I will need two copies of each category - with or without subtle PSRC [Author Name/Alias] text included in the image.
+
+
+Now, I need to copy the link to the "suitable place" from each site and put them underneath these categories where I believe they might fit best - based on their rules and what existing content has been posted there. As explained previously.
+
+Lastly, under each link write the exact steps/warnings to post the image there correctly - so that it complies with rules.
+
+
+
+Basically each category/segment would look like this:
+
+SINGLE OBJECT - WITH TEXT
+
+[LINK1]
+Write title as: PSRC [Object Name] by [Author Name]
+
+[LINK2]
+Write title as: PSRC [Object Name]
+Avoid anything else in title. Strict rules.
+
+[LINK3]
+Write title as: [insert cheesy pun based on object]
+Humorous place, emphasize that in title
+
+
+SINGLE OBJECT - NO TEXT
+
+[LINK4]
+Write title as: [Object Name] by PSRC [Author Name]
+
+[LINK5]
+Write title as: [Object Name]
+very strict, nothing extra allowed
+
+
+GROUP OF OBJECTS - WITH TEXT
+
+[LINK6]
+Forum - write "I made some sprites: [object name 1, object name 2, object name 3], I have more pictures at [my Ko-fi store] link.
+
+
+GROUP OF OBJECTS - NO TEXT
+
+[LINK7]
+Write title "Some [object names/theme]"
+
+
+SCENE IMAGE - WITH TEXT
+
+[LINK8]
+Image board - write title: "[Object Names]"
+
+
+SCENE IMAGE - NO TEXT
+
+[LINK9]
+Blog - write title: "[month] progress report"
+write description/content text "Made some [object names] this month."
+
+
+--
+
+And so on. 
+
+This would be the entire marketing document per each PSRC sprite package. Nothing more, nothing less.
+
+The document can be as short or long as I want to. There is no limit to how many links I can put under any category, though having atleast 6 would be preferable.
+If I start having more than 12 links, I can consider hiring another person to do the marketing for me, provided they're compensated fairly for their time.
+
+I make each line / segment in this marketing document as simple to follow as humanly possible. Every title, description, text content and such as ultra minimal. I let the image be the focus and don't use any brainpower to write anything more elaborate than what you see above, namely because I don't need to - the images themselves are the star of the show.
+
+I'd simply open this up, maybe have a calender by my side where I mark which link I posted the previous day and then just do one next link for that day. 
+Ultra fast and easy. Brainless, practically.
+
+Thought it might look rather bland on the surface, this style of marketing is sufficient and quite powerful - capable of feeling natural, is not malicious or manipulative or unethical, its not wasting anyones time, its not trying to force anything upon anyone, its not infringing/violating anyone's fundamental human needs thus not triggering any defences from reasonable people - the ones that matter.
+
+Anyone that'll see it will either be "hey cool, imma check out more" or "meh, I don't need this, whatever", filtering out unsuitable customers and only attracting those customers that truly matter and care about the product I made.
+
+If you wanted to know what it takes to have a chance at naturally manifesting viral marketing or general word of mouth marketing - this marketing system is what has a great chance of sparking it.
+
+Over time, some communities might change their rules, stances or the moderators might feel my content is too repetitive and decide to warn me/ ban me/ remove my posts - either temporarily or permanently. If this happens, I can either give that particular community a rest for 6 months or remove it completely from the list, respectively. This is normal.
+
+I can also add new communities that I missed the first time I searched for them. The list/marketing document itself can adapt when needed.
+
+
+--
+
+Effectiveness of this marketing system depends on these factors:
+
+How many suitable places I've posted to? If I post in too few location, I've probably missed a lot of interested people that could have been reached in other places. I must try not to rely only on a few suitable places. More is better - thought never reduce quality or rule adherance when amassing more links.
+
+Do I correctly adhere to rules to the rules of each suitable place I post a marketing image to?
+
+How exactly suitable were those places actually - was it a good idea to post there? Over the course of a month, am I getting predominantly likes, positive comments and acceptance or has the feedback been mostly negative and rejective. Was there anything I can change to correct their concerns or is that place a total bust and I should completely retreat? Its important not to judge the first two days, but look at longer time spans.
+
+Do I post regularly enough, atleast 6 times a month in total?
+
+Do I post slowly enough, atleast 1-3 posts per 2-7 days? Its okay if I'm irregular and have longer pauses during a month as long as I post enough to fill the monthly minimum quota of marketing images posted.
+
+Do I still have most of my time available to make content instead of only being stuck doing marketing and nothing else? The more sprite packs I have drawn, the more exponential potential I have for success. A few packs may not be enough - with too few variety in marketing images, I run the risk of being detected in posting duplicates in a community too soon. Posting one same image to a community I already posted in the past should only be done after *atleast* 12 months have passed. If I can refresh or spice up my marketing image stockpile somehow, with effects/filters or whatnot, that would be a nice addition too.
+
+How do I manage my mistakes? If I mess up and post something in a wrong way somewhere, its always good to apologize and correct my mistake right away. Failing to do this can harm reputation in the long run.
+
+Are my marketing images not-total-shit? While some level of "ruining" is needed to preserve selling the real product at my store is needed, I still need to strike a balance between the images not being crap that its awful to look at them, ensuring the artifacting is only applied on the sprites, not the borders or the subtle text on the image - this can be done by first saving the image as a JPG, closing the image, then reopening it back up again, then drawing clean borders and text over the image and saving it as a PNG, where the existing jpg damage stays but the new borders/text/other elements are undamaged.
+
+Aside from the that, are marketing images overall atleast somewhat aethetically pleasing, legible and have some method of style to them? Things I'd avoid are black objects on black backgrounds, white objects on white backgrounds, horrible high-contrast color combinations like neon lime green and pink, "ugly" fonts like comic sans or papyrus, background patterns/textures that make it hard to see the actual objects on the images or anything else that would steal the show and focus away from the actual objects on the marketing image.
+
+Use low contrast compositions that are easy on the eye, reduce background/border color saturation to a range between 30-80%, reduce the opacity of any patterns/textures used in the background to below 50% opacity - so that they're subtle. Make sure text is easy to read, make sure the image is resized to be large enough that I don't have to use zooming or use a magnifying glass to see it properly. Make sure the objects themselves are emphasized in the image the most - not the text, background or borders, all of these should only support and help the object itself look cooler/more impressive thanks to them. Try to position the object in the center of the image or atleast somewhere in the two-third photo camera rule area. Try not to have too much unused/useless space, crop the image, avoid creating compositions that remind people of poo, vomit or piss - color and texture wise.
+
+Additional tips can be found on a web search engine with "how to make my marketing picture look better". I can only cram so many tips into this guide before it gets too bloated and hard to read.
+
+
+--
+
+Besides all the above marketing, there is also the option to reach out to public champions, influencers, reviewers, marketplaces and other similar people or groups that run a business or hobby site/social media account where they inform others about new products, discuss old products, warn of potential dangers or highlight potential opportunities to project authors out there.
+
+Reaching out essentially happens with a fairly simple cold-email. I seek out these types of people, find their email addresses or contact forms and write them the first email out of nowhere.
+
+##
+
+Title of email: "I made a new sprite pack, sent to you for free, please showcase it."
+
+Body of email:
+
+1 to 4 full quality images that showcase the pack as a whole, JPG quality ruined. Assume the person might use them to showcase the images out there as is - which would lead to easy theft of my sprites if they were clean PNG without any ruining included.
+
+Short description of what this pack containts eg "PSRC Gun Pack 1 includes over 100 new realistic firearms from the modern era. Colored and greyscale versions available."
+
+A direct download link or inline attachment (make getting the pack as instant and easy as possible for the person I'm sending the email to.)
+
+A short blurb about what PSRC is and its benefits (same bulletpoints I'd write on my store page, along with a "Pixel Sprites ala Reactorcore (PSRC) is an advanced perpetually expandable system of 2D pixelart sprites intended for game use that include built-in game design with strong emphasis on gameplay flexibility to sustain an entire open-world universe simulator.)
+
+A small respectful request and explanation why this email was sent to this person in particular:
+"Hey, I saw you run [X social media account / website / blog / channel / whatever] and so I sent you my product in hopes you could cover it. No obligations, no deadlines, no expection, no strings attached - only do it if you like it, however you want to. Positive or negative review are both welcome."
+
+"I would appreciate a link to my store [link included] and please do not distribute the package I sent you publicly, its only for you."
+
+"Please upload any images as JPG
+
+A "Thank you - [Author Name]" to end the email nicely.
+
+##
+
+I'd send this email and cross my fingers the won't this person won't abuse my vulnurability and that perhaps, maybe, they might cover my package on their website. Bonus points if they do it positively or atleast fairly.
+
+To mitigate risks, I'd have to vet each person / group / site I'm sending this type of email to - to see if there are enough indicators that I can trust them with this.
+
+I can look at their existing articles, see how they're written, how active the person / group is over a longer period of time. I'd check how legit/shady their website, aliases, real names, country of operation (avoid mainland china, iran, UAE, most of africa and north korea), about page (if any) or contact addresses are. I can probe them with question emails prior to sending my packages to them if I'm still somewhat suspicious of them even after checking all these things.
+
+Ideally if something were to go wrong there would be a mechanism that I could pursue to shut them down, if they would start giving away my sprite packages for free when they're intended to be paid products. Things like reporting about them to their website host, their governing authority of piracy, DMCA or other similar avenue.
+
+That said, the likely hood of piracy of PSRC sprite packs is still high, so there will be those that will do it - be it through these people, people close to them or even by those that first buy my package on my store and then go out there to share it illegally to others. The main thing is to attempt to shut down most blatant sources of it so that there is atleast some degree of resistance and pushback against abuse, but be ok with the fact that some shady corners of the net will still do it.
+
+My main job is two fold:
+1. Ensure my customers are getting the most fluent experience when they do business with me. I do my best to serve and support them, especially when they pay money.
+2. Communicate clearly and loudly that my continued existence depends on financial support of PSRC purchases - if they stop, I might have to stop entirely or atleast drastically reduce priority and development speed for this project.
+
+The latter one informs any existing and would-be pirates that their actions have real consequences if they decide to get my stuff for free, especially when they do have the means to buy my products but simply chose not to. For those pirates that simply cannot pay due to insufficient funds or other restrictions, I understand and I offer them a free starter pack, as well as this document with which they could start a legit business using this system to gain wealth.
+
+
+--
+
+Lastly, theres the topic of small marketing posts and big marketing posts. Small updates and big releases.
+
+=
+
+*Big releases or announcements are milestone moments, where I'm telling the world that I've finally completed something and it is now available for people to actually try, buy and use. They're updates where the customers can be actually told to do something, to get something tangible, to finally start using it for their own needs.
+
+These include first existence announcement, a teaser, a trailer, a release, a major/minor update, an expansion, an overhaul/large change, a maintenance notice.
+
+=
+
+*Small updates are tiny moments that preview a glimpse of something currently in development, ghosts/shadows/lights of something larger that is looming in the distance, a quick temporary flash of information that is intriguing, but something that cannot be acted upon - other than to attempt to trail the source from where it came. *wink*
+
+These include the marketing image posts I've already explained. They look cool and may invoke curiosity for a person to investigate more information by following me, checking out my profile, web searching me... and eventually finding my store/blog/social media account that they can follow and recieve news about the stuff they signed up for in the first place.
+
+=
+
+Marketing does *not* happen during big release posts, actually.
+
+Big releases are meant to cash out all the hype and traffic created/generated by the consistent cumulative small marketing posts I've made over a long period of time.
+
+Yes sure, large posts *can* be picked up by news outlets that will cover the event and thus drive traffic, increase visibility and marketing the product for me, but this will not happen unless I have first made myself popular through grassroots marketing via the small marketing posts. I have to earn it - it doesn't come automatically or without effort.
+
+Even then, the news outlets won't cover things automatically either; I'm going to need to personally send them a message/hint/email about the event - preferably a week or few days prior to the event itself and also once while the event is still fresh and active (most events are considered "fresh" for 3 days after they've been launched).
+
+News outlets may only automatically cover my events if I've already made a name for myself over a longer period of time and there is someone enthusiastically following my information feed out of their own free volition.
+
+Just for clarity by "news outlets" I mean the "public champions, influencers, reviewers, marketplaces and other..." I discussed previously.
+
+
+--
+
+
+And thats it.
+
+My email is reactorcoregames@gmail.com, if you have questions. 
+
+Depending on how busy I am, my reply might take a bit long to do, so please don't expect instant messaging from me - I'm a one person developer.

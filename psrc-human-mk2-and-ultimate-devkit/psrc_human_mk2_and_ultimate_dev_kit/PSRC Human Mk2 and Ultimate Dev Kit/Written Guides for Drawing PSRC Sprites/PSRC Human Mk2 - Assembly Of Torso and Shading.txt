@@ -1,0 +1,33 @@
+PSRC Human Mk2 - Assembly Of Torso and Shading
+
+--
+
+When assembling torsos - for all genders, all ages, muscles/casual and all body types - this is the process:
+
+* Shoulders, bottoms, necks, tits/moobs, bellies are prefabs.
+
+* Once prefabs are assembled, the connecting sectors are shaded shut between the components.
+
+* For muscular bodies, they combine the muscle belly package + ribbed/bumped torso side shading.
+* For average/smooth bodies, they simply are smooth.
+
+--
+
+Shading style of Normal - Muscular - Clothed version of Arms, Legs and Torso:
+.Normal - average smooth shading - vastly differing silhouettes between SML sizes.
+.Muscular - shiny tight shading with sectors - silhouettes only differ slightly between SML sizes.
+.Clothed - flat matte shading with barely any highlights - silhouettes are combined max of Normal/Muscular.
+
+*SML - Small, Medium, Large.
+
+--
+
+Torso Belly Sector - Muscles
+
+TYPE 1 - Provides differentiation to muscle strenght based on shoulder size - i.e bigger = better.
+Lean Muscles uses 3 sprites depending on should size. (Small - small muscles, Medium - full pack, Large - mega pack.)
+Fat Muscles uses 1 sprite
+Obese Muscles uses 1 sprite
+
+TYPE 2 - Simple
+Lean Muscles uses only the 3rd (Large muscles for all shoulder sizes - they line up best with belly muscles combo.)

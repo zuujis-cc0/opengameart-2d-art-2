@@ -1,0 +1,18 @@
+Reactorcore Art (RC Art)
+==
+PACK: Nature Aquatic
+
+--
+
+Pixel-art sprites pack depicting underwater type flora, stationary fauna and geological biome features for caves and seafloor.
+
+--
+
+By default in image import settings, all sprites/textures have been set to 32 pixels per unit and using a point filter so they appear crisp.
+
+--
+
+Contact:
+mailto:reactorcoregames@gmail.com
+
+Enjoy!

@@ -1,0 +1,33 @@
+Facetray sheets explained - Grid-based auto-slicable images
+===========================================================
+
+Unlike the other spritesheets in this pack, facetray sheets are grid-based. 
+Grid-based sheets are divided into rows and columns of equally sized cells that contain the object inside.
+As an example, a 8x8 pixel grid sheet means no individual object on the sheet can be bigger than 8x8 pixels in size.
+
+--
+
+This means if you want to split these sheets into individual images you will need an image slicer of some sort. Or a Sprite Sheet Slicer / Cutter by its alternative name.
+It can be a standalone app or a side function in an image editor or game engine. ASU will not work here, however Unity has this 2D sprite tool feature by default.
+
+Sprite Slicers usually work by first loading an image into it, then inputting X rows and Y columns as parameters and then press "apply/ok".
+It might also work with inputting X pixels and Y pixels as parameters for gridcell size instead of rows & columns. This depends on the program.
+
+--
+
+I have included spriteSheetSlicerStandalone.zip, which I found on here: https://isometric8.itch.io/sprite-sheet-slicer. Its easy enough to use it:
+Unzip, run, browse/load spritesheet, put X/Y rows/columns based on objects on sheet, select export folder, add a prefix (optional) and press "Slice Images to Disk".
+The middle has an invisible divider that you can drag left/right, incase the buttons/fields are not visible due to narrow monitor. Dragging this divider will reveal them.
+
+You can also easily find other online and offline sprite slicer/cutter programs by doing a web-search on the internet.
+As said, some game engines like Unity may already have this function, so you might not need to use this program.
+
+--
+
+The included INFO images (and filenames) show what is the gridcell width/height size is in pixels for each type of facetray element:
+
+Ears 		-		= 7x12 pixels
+Nose 		-		= 7x5 pixels
+Mouth, Brows, Eyes 	= 7x4 pixels
+
+They generally help you remember which pieces are available at a quick glance, because they're in the same order as the actual PNG grid sheets with transparent backgrounds.

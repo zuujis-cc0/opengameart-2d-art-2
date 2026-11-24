@@ -1,0 +1,52 @@
+# PSRC Human Mk2 - Penis and Balls (and vagina) (and tits)
+
+--
+
+Cock and balls are seperate modular addons
+
+By default, both male and female torsos are pre-equipped with a vagina.
+Main difference between male and female torsos is breasts/tits. Male have flat breast plates of s, m, l, xl sizes, while female have round tits of s, m, l, xl sizes.
+On top of that, it is possible to attach a ballsack and/or a penis shaft, seperately. If balls/dick are attached, then it must always be balls first, then dick second on top of it.
+
+This system allows for shemales, futanari, man with tits, woman with dick, with or without balls, with or without penis shaft (vagina with ballsacks, anyone?)
+
+There is also the possibility of featuring multiple sets of genitals, like multiple rows of tits, multiple dicks in a cluster, dick nipples and multiple testicle sets. Granted, all these multi-genital non-standard configurations void any warranty for cloth compatibility, so there will be no clothes sizes/shapes to accomodate their silhouettes - instead any extra overspilling genitals will be temporarily disabled while any piece of clothing is on a characters torso (some exceptions apply, like addon cloth pieces).
+
+Goofiness aside, the system is robust to allow for quite a lot of possible configuration, even odd ones.
+With balls, there are three sizes, s, m, l. 1x1px nuts, 2x1px nuts and 2x2px nuts - they all come in pairs.
+With dicks (erect), there are 4 sizes, s, m, l, xl - same as tits. 
+
+Theres also a single universal flaccid dick sprite. Drawing 2 or 4 sizes of flaccid dick wasn't feasible due to size, clarity and restriction reasons (only 5x5 pixel space to cram it, attempts didn't look good). A cool side-effect of this is that while a person is flaccid, their true dick size is a mystery - until they get erect!
+
+--
+
+Because cloth compatibility heavily relies on the torso's silhouettes, there are two options for genital representation - Internal and External.
+The only real difference here is that in "External" mode the erect penis gets to rotate freely around its joint at the base of the cock. Otherwise both modes use the exact same sprites and positions for them.
+
+
+INTERNAL
+
+Balls are located always within silhouette seated at the lower base of torso.
+Balls always go underneath dick.
+Dick has two modes:
+-flaccid (1 sprite)
+-erect (4 size options - s, m, l, xl)
+Dick flaccid points forward in char facing direction.
+Dick erect points up along belly, static/unmoving.
+Dick placed 2 px above balls, even if its the large balls that will slightly overlap. This is ok.
+
+
+EXTERNAL
+
+Same as above, but instead of erect penis being static/unmoving it is physics/code enabled to rotate around its joint at the base of the shaft.
+Ideally, the erect penis would face forward instead of up (if char faces right, then dick faces right too etc.)
+If physics enabled, I can have a half-erect mode, where the dick dangles downwards and then apply force when the dick goes into fully-erect mode, causing it to rotate forward into its intended position. This method is realistic since if the character also runs, jumps and moves, the dick will struggle to maintain the fully erect intended position and flop around, until the character comes to a stop.
+If any piece of clothing if applied to groin, then the dick is temporarily shifted into INTERNAL mode, making it face upward and become static/unmoving. Once restraining groin clothing is removed, the dick can freely rotate again.
+Flaccid dick is the same as INTERNAL, unmoving/static. It does not recieve physics rotation or position shifting.
+Balls too are same as INTERNAL, just to reiterate.
+
+--
+
+Bonus
+I also included a 5th erect dick size, the XXL. I think its comically absurd and too tall/long, but the idea of a long ass cumcannon seemed too funny to not include.
+I didn't vary the dick shapes between the sizes, since the constraints were quite tight (3px with both edges needing to be dark to differentiate from the belly behind the penis, so effectively the dick's actual drawing surface is forced to be 1px thin line). However, that said I think it may be possible to draw some more unusual dicks, like alien penises or other tentacles dongs - thought within the same size and style constraints. I'd still keep the flaccid dick sprite as-is for all variants though, for simplicity's sake.

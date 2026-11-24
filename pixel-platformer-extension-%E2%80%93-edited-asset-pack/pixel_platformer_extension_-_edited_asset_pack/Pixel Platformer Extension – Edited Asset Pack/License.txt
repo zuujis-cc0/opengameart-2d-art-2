@@ -1,0 +1,36 @@
+Pixel Platformer Extension – Edited Asset Pack  
+Version: 1.0  
+Created by Arce Niko  
+Creation date: August 7, 2025
+----------------------------------------
+
+License: Creative Commons Zero (CC0)  
+https://creativecommons.org/publicdomain/zero/1.0/
+
+This asset pack is released under the Creative Commons Zero (CC0) license. You are free to use, modify, and distribute these assets for personal, educational, and commercial purposes. No attribution is required, though credit is appreciated.
+
+----------------------------------------
+
+Original base assets were derived from:
+
+**Pixel Platformer (1.2)**  
+Created/distributed by Kenney — [www.kenney.nl]  
+Used under the Creative Commons Zero (CC0) license.  
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Kenney is not affiliated with this customized version and has not reviewed or endorsed any modifications.
+
+----------------------------------------
+
+Support the original creator:  
+• Website: www.kenney.nl  
+• Donate: www.kenney.nl/donate  
+• Patreon: patreon.com/kenney  
+• Twitter: twitter.com/KenneyNL  
+• Instagram: instagram.com/kenney_nl  
+• Mastodon: mastodon.gamedev.place/@kenney
+
+----------------------------------------
+
+Support the editor:  
+• GameJolt: https://gamejolt.com/@arcenk09
